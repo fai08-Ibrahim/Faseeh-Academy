@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Share your learning experience with Faseeh Academy." />
+  <title>Leave a Review | Faseeh Academy</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="review-page">
+  <main class="section">
+    <div class="container">
+      <div class="review-shell card">
+        <p class="section-tag">Student Testimonial</p>
+        <h1>Share Your Experience</h1>
+        <p class="review-intro">Your feedback helps other families and learners understand what to expect at Faseeh Academy.</p>
+
+        <form id="reviewForm" class="review-form" novalidate>
+          <label for="reviewName">Your Name</label>
+          <input id="reviewName" name="name" type="text" required placeholder="e.g., Amina" />
+
+          <label for="reviewCountry">Country</label>
+          <input id="reviewCountry" name="country" type="text" required placeholder="e.g., Canada" />
+
+          <label for="reviewRole">You are</label>
+          <select id="reviewRole" name="role" required>
+            <option value="" selected disabled>Select one</option>
+            <option value="student">Student</option>
+            <option value="parent">Parent</option>
+            <option value="guardian">Guardian</option>
+          </select>
+
+          <label for="reviewText">Your Review</label>
+          <textarea id="reviewText" name="message" rows="5" required placeholder="Share your experience in a few lines..."></textarea>
+
+          <div class="review-actions">
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+            <a href="index.html" class="btn btn-secondary">Back to Home</a>
+          </div>
+        </form>
+
+        <section id="reviewSuccess" class="review-success" aria-live="polite" hidden>
+          <h2>Thank you for your review.</h2>
+          <p>Your testimonial has been submitted for review by our admin team before publishing.</p>
+          <p>Would you like to return to the home page?</p>
+          <div class="review-actions">
+            <a href="index.html" class="btn btn-primary">Yes, Return Home</a>
+            <button id="submitAnother" type="button" class="btn btn-secondary">No, Submit Another Review</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/review-form.js"></script>
+</body>
+</html>
