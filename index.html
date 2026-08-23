@@ -1,465 +1,314 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl" class="notranslate" translate="no">
+<!doctype html>
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google" content="notranslate" />
-  <meta name="description" content="Faseeh Academy helps non-Arabic speakers learn Quran recitation, memorization, and Arabic basics online with qualified teachers." />
-  <title>Faseeh Academy | Online Quran Learning</title>
-  <link rel="icon" type="image/png" href="images/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal online Quran, Tajweed and Arabic lessons for English-speaking Muslims. Learn one-to-one with patient teachers at Faseeh Academy.">
+  <meta name="theme-color" content="#082f25">
+  <title>Faseeh Academy | Online Quran Learning, Made Personal</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announcement">
+    <div class="container announcement-inner">
+      <p><span class="status-dot" aria-hidden="true"></span> New student places are open</p>
+      <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Book a complimentary trial <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
   <header class="site-header" id="home">
-    <nav class="navbar container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Faseeh Academy home">
-        <img src="images/logo.jpg" alt="Faseeh Academy logo" class="brand-logo" />
-        <span class="brand-text">Faseeh Academy</span>
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Faseeh Academy home">
+        <img src="images/favicon.svg" alt="" class="brand-mark" width="46" height="46">
+        <span class="brand-lockup"><strong>Faseeh</strong><small>Quran Academy</small></span>
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation">
+        <span></span><span></span>
       </button>
 
       <div class="nav-menu" id="navMenu">
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
           <li><a href="#programs">Programs</a></li>
-          <li><a href="#teachers">Teachers</a></li>
-          <li><a href="#why-faseeh">Why Faseeh</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#approach">Our approach</a></li>
+          <li><a href="teachers.html">Teachers</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#faq">FAQ</a></li>
         </ul>
-        <button class="btn lang-toggle" id="languageToggle" type="button" aria-label="Switch to English">English</button>
-        <a class="btn btn-primary nav-cta" href="#contact">Start Learning</a>
+        <a class="text-link nav-contact" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Messenger</a>
+        <a class="btn btn-small btn-primary" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Book a free trial</a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero" aria-label="Hero section">
-      <div class="hero-slider" id="heroSlider">
-        <div class="slide active" style="background-image: url('images/image01.png');"></div>
-        <div class="slide" style="background-image: url('images/image02.png');"></div>
-        <div class="slide" style="background-image: url('images/image03.png');"></div>
-      </div>
-      <div class="hero-overlay"></div>
-
-      <div class="hero-content container">
-        <p class="hero-kicker">Online Quran Academy For Global Learners</p>
-        <h1>Learn to Recite and Memorize the Quran with Confidence</h1>
-        <p>
-          Join Faseeh Academy and begin your journey to mastering Quran recitation and memorization with experienced teachers dedicated to helping non-Arabic speakers understand and recite the Quran beautifully.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/201149724588" target="_blank" rel="noopener noreferrer">Start Your Journey</a>
-          <a class="btn btn-secondary" href="https://wa.me/201149724588" target="_blank" rel="noopener noreferrer">Book a Free Trial Class</a>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-media" role="img" aria-label="A peaceful Quran study setting with an open Quran on a wooden stand"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow eyebrow-light"><span></span> Live, one-to-one Quran learning</p>
+          <h1>Recite with clarity.<br><em>Learn with heart.</em></h1>
+          <p class="hero-lead">Patient, personal Quran lessons for English-speaking Muslims—where every correction is clear and every student is known.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Begin with a free class <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" href="#programs">Explore programs</a>
+          </div>
+          <p class="micro-proof"><span class="student-faces" aria-hidden="true"><i>O</i><i>F</i><i>Y</i></span> Trusted by learners across the UK, US, Canada and beyond</p>
         </div>
-        <div class="slider-dots" id="sliderDots" aria-label="Hero slides"></div>
+
+        <aside class="hero-note reveal" aria-label="Academy highlights">
+          <p class="hero-note-label">The Faseeh promise</p>
+          <blockquote>“We meet you at your level, then walk with you—letter by letter.”</blockquote>
+          <div class="hero-note-stats">
+            <div><strong>1:1</strong><span>Live lessons</span></div>
+            <div><strong>10+</strong><span>Years' combined experience</span></div>
+            <div><strong>2</strong><span>Teaching languages</span></div>
+          </div>
+        </aside>
+      </div>
+      <a class="scroll-cue" href="#welcome"><span>Scroll to discover</span><i aria-hidden="true">↓</i></a>
+    </section>
+
+    <section class="trust-bar" aria-label="Learning benefits">
+      <div class="container trust-grid">
+        <p><span aria-hidden="true">✦</span> English-guided lessons</p>
+        <p><span aria-hidden="true">✦</span> Flexible online schedule</p>
+        <p><span aria-hidden="true">✦</span> Women, men & children</p>
+        <p><span aria-hidden="true">✦</span> Hafs ‘an Asim</p>
       </div>
     </section>
 
-    <section class="section about reveal" id="about">
-      <div class="container two-col">
-        <div class="about-image-wrap">
-          <div class="learning-pyramid" role="img" aria-label="Seven-stage learning path from Quran reading foundations to guided hifz achievement">
-            <div class="pyramid-step step-7">
-              <span class="step-title">Hifz Progress</span>
-              <span class="step-number">7</span>
+    <section class="section welcome" id="welcome">
+      <div class="container welcome-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> A gentler way to learn</p>
+          <h2>The Quran was never meant to feel <em>out of reach.</em></h2>
+        </div>
+        <div class="welcome-copy reveal">
+          <p class="lead-copy">Not speaking Arabic should never stand between you and a confident, beautiful recitation.</p>
+          <p>Faseeh Academy was created for learners who need explanation, patience and structure—not pressure. Your teacher listens carefully, explains in English, and shapes every lesson around your pace.</p>
+          <a class="arrow-link" href="#approach">Discover our teaching approach <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section programs" id="programs">
+      <div class="container">
+        <div class="section-intro reveal">
+          <div>
+            <p class="eyebrow"><span></span> What you can learn</p>
+            <h2>One academy.<br><em>A lifelong journey.</em></h2>
+          </div>
+          <p>Begin exactly where you are. Each pathway is taught one-to-one and adjusted as your confidence grows.</p>
+        </div>
+
+        <div class="program-grid">
+          <article class="program-card program-featured reveal">
+            <div class="program-number">01</div>
+            <div class="program-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M8 13c6-3 11-3 16 1v25c-5-4-10-4-16-1V13Zm32 0c-6-3-11-3-16 1v25c5-4 10-4 16-1V13Z"/><path d="M24 14v25"/></svg>
             </div>
-            <div class="pyramid-step step-6">
-              <span class="step-title">Quran Understanding</span>
-              <span class="step-number">6</span>
+            <div>
+              <p class="card-kicker">Most popular</p>
+              <h3>Quran Recitation & Tajweed</h3>
+              <p>Build accurate makharij, understand the rules and replace hesitation with a calm, steady recitation.</p>
+              <ul class="tick-list"><li>Beginner friendly</li><li>Clear English explanation</li><li>Personal correction</li></ul>
             </div>
-            <div class="pyramid-step step-5">
-              <span class="step-title">Basic Arabic Grammar</span>
-              <span class="step-number">5</span>
+            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about Quran Recitation and Tajweed">Explore this path <span>→</span></a>
+          </article>
+
+          <article class="program-card reveal">
+            <div class="program-number">02</div>
+            <div class="program-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 7 9 15v18l15 8 15-8V15L24 7Z"/><path d="m9 15 15 9 15-9M24 24v17"/></svg>
             </div>
-            <div class="pyramid-step step-4">
-              <span class="step-title">Quran Vocabulary</span>
-              <span class="step-number">4</span>
+            <div>
+              <p class="card-kicker">For steady progress</p>
+              <h3>Quran Memorization</h3>
+              <p>A realistic Hifz plan with guided revision, gentle accountability and a pace you can sustain.</p>
+              <ul class="tick-list"><li>Personal memorization plan</li><li>Revision built in</li><li>For adults and children</li></ul>
             </div>
-            <div class="pyramid-step step-3">
-              <span class="step-title">Tajweed Rules</span>
-              <span class="step-number">3</span>
+            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about Quran Memorization">Explore this path <span>→</span></a>
+          </article>
+
+          <article class="program-card reveal">
+            <div class="program-number">03</div>
+            <div class="program-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M15 29c3 3 6 4 9 4s6-1 9-4M17 20h.1M31 20h.1M24 7v5"/></svg>
             </div>
-            <div class="pyramid-step step-2">
-              <span class="step-title">Makharij</span>
-              <span class="step-number">2</span>
+            <div>
+              <p class="card-kicker">Made for young minds</p>
+              <h3>Arabic Foundations for Children</h3>
+              <p>Warm, engaging lessons that build letter recognition, reading fluency and love for the language.</p>
+              <ul class="tick-list"><li>Short focused sessions</li><li>Encouraging instruction</li><li>Strong reading foundation</li></ul>
             </div>
-            <div class="pyramid-step step-1">
-              <span class="step-title">Reading Basics</span>
-              <span class="step-number">1</span>
+            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about Arabic Foundations for Children">Explore this path <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section approach" id="approach">
+      <div class="container approach-grid">
+        <div class="approach-visual reveal" aria-hidden="true">
+          <div class="arch arch-back"></div>
+          <div class="arch arch-front">
+            <p>اقْرَأْ</p>
+            <span>Begin with one letter</span>
+          </div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+        </div>
+
+        <div class="approach-copy">
+          <p class="eyebrow reveal"><span></span> How learning feels here</p>
+          <h2 class="reveal">Clear direction.<br><em>Human connection.</em></h2>
+          <p class="approach-lead reveal">Technology brings the classroom to you. A caring teacher is what makes it meaningful.</p>
+          <ol class="method-list">
+            <li class="reveal"><span>01</span><div><h3>We listen first</h3><p>Your trial class helps us understand your reading, confidence and goals.</p></div></li>
+            <li class="reveal"><span>02</span><div><h3>We shape your path</h3><p>Your teacher creates a simple lesson rhythm around your actual level and schedule.</p></div></li>
+            <li class="reveal"><span>03</span><div><h3>We grow steadily</h3><p>Clear correction, kind repetition and regular progress checks keep you moving.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section teachers-preview" id="teachers">
+      <div class="container">
+        <div class="section-intro reveal">
+          <div>
+            <p class="eyebrow"><span></span> Meet your guides</p>
+            <h2>Teachers who correct<br><em>with compassion.</em></h2>
+          </div>
+          <div class="section-intro-side">
+            <p>Our team supports women, men and children in English and Arabic, with careful matching for every learner.</p>
+            <div class="carousel-controls" data-teacher-controls>
+              <button type="button" data-teacher-prev aria-label="Previous teacher">←</button>
+              <button type="button" data-teacher-next aria-label="Next teacher">→</button>
             </div>
           </div>
         </div>
-        <div class="about-content">
-          <p class="section-tag">About Faseeh Academy</p>
-          <h2>Dedicated To Meaningful Quran Learning</h2>
-          <p>
-            Faseeh Academy is an online Quran learning platform dedicated to helping Muslims around the world recite and memorize the Quran correctly. Our mission is to make Quran learning accessible to non-Arabic speakers through structured lessons, qualified teachers, and personalized guidance.
-          </p>
-          <p>
-            We focus on <strong>beginners learning Quran recitation</strong>, <strong>non-Arabic speakers</strong>, and students with basic recitation who want to improve and master Tajweed. We do not specialize in advanced ijazah programs or certification tracks for already highly proficient reciters.
-          </p>
-          <p>
-            Although the academy was established in <strong>2025</strong>, our teachers collectively bring <strong>over 10 years of experience teaching Quran and Arabic to non-Arabic speakers</strong>.
-          </p>
-          <p>
-            Teaching is done in <strong>Riwayat Hafs 'An Asim</strong>, the most widely recited narration of the Quran worldwide.
-          </p>
-          <ul class="clean-list">
-            <li>Correct pronunciation (Tajweed)</li>
-            <li>Structured memorization (Hifz)</li>
-            <li>Confidence in recitation</li>
-            <li>Personal mentorship</li>
-          </ul>
+        <div class="teacher-viewport reveal" data-teacher-slider aria-label="Teacher specialities carousel"></div>
+        <div class="teachers-footer reveal">
+          <p>Teacher profiles are shown by specialty to respect team privacy. We share your matched teacher’s full background during enrollment.</p>
+          <a class="arrow-link" href="teachers.html">Meet the teaching team <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
 
-    <section class="section programs reveal" id="programs">
+    <section class="section plans" id="plans">
       <div class="container">
-        <p class="section-tag">Programs</p>
-        <h2 class="section-title">Choose The Program That Fits Your Goal</h2>
-        <div class="cards-grid three-up">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path d="M6 4h9l3 3v13H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
-                <path d="M15 4v3h3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M9 11h6M9 15h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-              </svg>
-            </div>
-            <h3>Quran Recitation (Tajweed)</h3>
-            <p>Learn correct pronunciation and recitation rules with clear, step-by-step guidance.</p>
+        <div class="plans-heading reveal">
+          <p class="eyebrow eyebrow-light"><span></span> Simple monthly plans</p>
+          <h2>Make room for Quran<br><em>in your real life.</em></h2>
+          <p>Choose the level of teaching support that fits your goals, with a clear hourly rate and a simple monthly subscription.</p>
+        </div>
+
+        <div class="tier-grid reveal">
+          <article class="price-card tier-halaqah">
+            <p class="price-name">Halaqah</p>
+            <div class="price"><strong>$8</strong><span>per hour</span></div>
+            <p class="monthly-total"><b>From $64 monthly</b><span>based on 8 learning hours</span></p>
+            <p class="tier-intro">Shared learning that stays personal, encouraging and accessible.</p>
+            <ul><li>Small groups of up to 4 students</li><li>Certified native teachers</li><li>Affordable, engaging learning</li></ul>
+            <a class="btn btn-tier" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Start with Halaqah <span aria-hidden="true">↗</span></a>
+            <p class="tier-best">Best for learners who enjoy a focused small-group setting.</p>
           </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path d="M8 4.5h8l2.5 2.5V18a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
-                <path d="M8 9h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                <path d="M12 4.5V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-              </svg>
-            </div>
-            <h3>Quran Memorization (Hifz)</h3>
-            <p>Structured memorization programs designed for children, youth, and adults.</p>
+
+          <article class="price-card tier-private">
+            <p class="price-badge">Most chosen</p>
+            <p class="price-name">Private</p>
+            <div class="price"><strong>$10</strong><span>per hour</span></div>
+            <p class="monthly-total"><b>From $80 monthly</b><span>based on 8 learning hours</span></p>
+            <p class="tier-intro">Dedicated one-to-one teaching with a plan built around you.</p>
+            <ul><li>One-to-one class with your teacher</li><li>Report after every class</li><li>Customized monthly study plan</li></ul>
+            <a class="btn btn-tier" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Choose Private <span aria-hidden="true">↗</span></a>
+            <p class="tier-best">Best for focused progress with personal guidance.</p>
           </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path d="M4 12c2.2-4.1 5-6.2 8-6.2S17.8 7.9 20 12c-2.2 4.1-5 6.2-8 6.2S6.2 16.1 4 12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
-                <circle cx="12" cy="12" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8" />
-              </svg>
-            </div>
-            <h3>Arabic Foundations for Children</h3>
-            <p>Build strong Arabic reading foundations so children can read fluently in general and approach Quran reading with confidence.</p>
+
+          <article class="price-card tier-excellence">
+            <p class="price-name">Excellence</p>
+            <div class="price"><strong>$15</strong><span>per hour</span></div>
+            <p class="monthly-total"><b>From $120 monthly</b><span>based on 8 learning hours</span></p>
+            <p class="tier-intro">The most connected, flexible level of support for serious learners.</p>
+            <ul><li>Everything included in Private</li><li>Free recorded classes</li><li>Direct teacher contact outside class</li></ul>
+            <a class="btn btn-tier" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Choose Excellence <span aria-hidden="true">↗</span></a>
+            <p class="tier-best">Best for learners who want deeper support and flexibility.</p>
           </article>
         </div>
+        <p class="pricing-note reveal">Prices shown in USD. Monthly subscriptions are calculated from your chosen weekly schedule; the examples above use 8 learning hours per month.</p>
       </div>
     </section>
 
-    <section class="section who-teach reveal" id="teachers">
-      <div class="container">
-        <p class="section-tag">Who We Teach</p>
-        <h2 class="section-title">Inclusive Learning For Every Student</h2>
-        <div class="cards-grid four-up icon-cards">
-          <article class="card compact">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <circle cx="12" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.8" />
-                <path d="M6.5 19c.8-2.7 2.8-4 5.5-4s4.7 1.3 5.5 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-              </svg>
-            </div>
-            <h3>Children</h3>
-          </article>
-          <article class="card compact">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <circle cx="12" cy="7.5" r="2.7" fill="none" stroke="currentColor" stroke-width="1.8" />
-                <path d="M9.3 18.5V14l-2.3 1.5m10-1.5v4.5m-7.7-7.5 2.7 2 2.7-2 2.3 1.6v5.9H7v-5.9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <h3>Women</h3>
-          </article>
-          <article class="card compact">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <circle cx="12" cy="7.5" r="2.7" fill="none" stroke="currentColor" stroke-width="1.8" />
-                <path d="M7.5 19v-5.2l4.5-2.4 4.5 2.4V19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M10 19v-3.2h4V19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <h3>Men</h3>
-          </article>
-          <article class="card compact">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8" />
-                <path d="M4.5 12h15M12 4.5c2.1 2 3.3 4.6 3.3 7.5S14.1 17.5 12 19.5M12 4.5c-2.1 2-3.3 4.6-3.3 7.5S9.9 17.5 12 19.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <h3>Non-Arabic Speakers</h3>
-          </article>
-        </div>
-        <div class="who-text">
-          <p>Our female teachers support <strong>Arabic and non-Arabic speakers</strong>, with dedicated classes for <strong>women and children</strong>.</p>
-          <p>Our team also includes <strong>two male teachers</strong> who teach <strong>Arabic and non-Arabic speaking men and young boys</strong>.</p>
-          <p>Faseeh Academy is open to everyone. While our main mission is helping non-Arabic speakers access Quran learning, we proudly serve both Arabic and non-Arabic learners.</p>
-          <p>Lessons are currently conducted in <strong>English and Arabic</strong>. <strong>German language support is coming soon.</strong></p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section why reveal" id="why-faseeh">
-      <div class="container">
-        <p class="section-tag">Why Choose Faseeh</p>
-        <h2 class="section-title">A Trusted Learning Experience</h2>
-        <div class="feature-grid">
-          <article class="feature-item">Experienced Quran Teachers</article>
-          <article class="feature-item">Very affordable prices</article>
-          <article class="feature-item">Personalized One-on-One Classes</article>
-          <article class="feature-item">Flexible Online Schedule</article>
-          <article class="feature-item">Support for Non-Arabic Speakers</article>
-          <article class="feature-item">Friendly and Encouraging Environment</article>
-        </div>
-        <p class="teacher-quality">
-          Most of our teachers are certified Quran instructors. Some may not hold formal certification but bring many years of proven experience teaching Quran to non-Arabic speakers. Our team is highly skilled in improving pronunciation and Tajweed, and some teachers specialize in teaching children from both Arabic and non-Arabic backgrounds.
-        </p>
-      </div>
-    </section>
-
-    <section class="section pricing reveal" id="pricing">
-      <div class="container">
-        <p class="section-tag">Pricing</p>
-        <h2 class="section-title">Bright, Flexible Plans For Every Family</h2>
-        <p class="pricing-text">Pick the plan that fits your weekly routine and learning goals. All classes are online, one-on-one, and designed to keep progress clear and encouraging.</p>
-
-        <div class="pricing-groups">
-          <article class="pricing-group pricing-group-women">
-            <div class="pricing-group-head">
-              <span class="pricing-badge">Women Plans</span>
-              <p>1 hour per session</p>
-            </div>
-            <div class="cards-grid three-up pricing-plan-grid">
-              <article class="card plan-card plan-basic">
-                <h3>Basic Plan</h3>
-                <p>2 sessions per week (8 sessions/month)</p>
-                <p class="plan-price">$40 / 150 AED</p>
-              </article>
-              <article class="card plan-card plan-standard">
-                <h3>Standard Plan</h3>
-                <p>3 sessions per week (12 sessions/month)</p>
-                <p class="plan-price">$60 / 220 AED</p>
-              </article>
-              <article class="card plan-card plan-intensive">
-                <h3>Intensive Plan</h3>
-                <p>4 sessions per week (16 sessions/month)</p>
-                <p class="plan-price">$80 / 300 AED</p>
-              </article>
-            </div>
-            <div class="pricing-notes">
-              <p><strong>Subjects:</strong> Quran memorization, Tajweed, and Arabic</p>
-              <p><strong>Format:</strong> Online one-on-one classes</p>
-              <p><strong>For:</strong> Women and children</p>
-            </div>
-          </article>
-
-          <article class="pricing-group pricing-group-children">
-            <div class="pricing-group-head">
-              <span class="pricing-badge">Children Plans</span>
-              <p>30 minutes per session (or 1 hour upon request)</p>
-            </div>
-            <div class="cards-grid three-up pricing-plan-grid">
-              <article class="card plan-card plan-standard">
-                <h3>Standard Plan</h3>
-                <p>3 sessions per week (12 sessions/month)</p>
-                <p class="plan-price">$30 / 110 AED</p>
-              </article>
-              <article class="card plan-card plan-intensive">
-                <h3>Intensive Plan</h3>
-                <p>4 sessions per week (16 sessions/month)</p>
-                <p class="plan-price">$40 / 150 AED</p>
-              </article>
-              <article class="card plan-card plan-super">
-                <h3>Super Intensive Plan</h3>
-                <p>5 sessions per week (20 sessions/month)</p>
-                <p class="plan-price">$50 / 185 AED</p>
-              </article>
-            </div>
-            <div class="pricing-notes">
-              <p>Fun and simple teaching style for kids</p>
-              <p>Quran memorization + basic Tajweed + building Arabic reading foundations</p>
-              <p>Online one-on-one classes</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section testimonials reveal" id="testimonials">
-      <div class="container">
-        <p class="section-tag">Testimonials</p>
-        <h2 class="section-title">What Our Students Say</h2>
-        <div class="testimonial-carousel" id="testimonialCarousel" aria-label="Student reviews slider">
-          <button class="testimonial-arrow t-arrow-left" id="testimonialPrev" type="button" aria-label="Previous testimonial">&#10094;</button>
-          <div class="testimonial-track" id="testimonialTrack">
-            <article class="card testimonial-card t-slide">
-              <p>"Excellent teachers who are very patient with beginners. In just a few weeks, my recitation became clearer and I finally understood where I was making repeated Tajweed mistakes. The class structure is simple, focused, and easy to follow."</p>
-              <h3>Omar, UK</h3>
-            </article>
-            <article class="card testimonial-card t-slide">
-              <p>"I finally learned correct pronunciation after years of trying on my own. My teacher corrected each letter step by step and gave practical homework that made a real difference between classes. I now read with much more confidence."</p>
-              <h3>Fatima, Canada</h3>
-            </article>
-            <article class="card testimonial-card t-slide">
-              <p>"This academy is perfect for non-Arabic speakers who want proper Quran learning in a supportive environment. Lessons are personalized, and the teacher always explains both the rule and the reason behind it. I can feel steady progress every month."</p>
-              <h3>Yusuf, USA</h3>
-            </article>
-            <article class="card testimonial-card t-slide">
-              <p>"The one-on-one format helped me correct common Tajweed mistakes quickly. I appreciated how the teacher balanced correction with encouragement, which kept me motivated. It feels professional yet very personal."</p>
-              <h3>Aisha, Germany</h3>
-            </article>
-            <article class="card testimonial-card t-slide">
-              <p>"My son became more confident in reciting after a few focused weekly lessons. The teacher is calm, kind, and knows how to keep children engaged while still maintaining discipline in class. We are very happy with his progress."</p>
-              <h3>Hassan, Egypt</h3>
-            </article>
-            <article class="card testimonial-card t-slide">
-              <p>"Supportive teachers and clear correction methods helped me improve my Tajweed quickly. I also appreciate the flexible schedule because it fits around work and family life. The academy has been consistent and reliable from day one."</p>
-              <h3>Zeynep, Turkey</h3>
-            </article>
+    <section class="section stories">
+      <div class="container stories-grid">
+        <div class="stories-heading reveal">
+          <p class="eyebrow"><span></span> Student stories</p>
+          <h2>Quiet progress.<br><em>Lasting confidence.</em></h2>
+          <div class="story-nav">
+            <button type="button" data-story-prev aria-label="Previous story">←</button>
+            <span><b data-story-current>01</b> / 03</span>
+            <button type="button" data-story-next aria-label="Next story">→</button>
           </div>
-          <button class="testimonial-arrow t-arrow-right" id="testimonialNext" type="button" aria-label="Next testimonial">&#10095;</button>
         </div>
-        <div class="testimonial-submit-box">
-          <p>Would you like to share your own experience with Faseeh Academy?</p>
-          <a class="btn btn-secondary" href="leave-review.html">Leave a Review</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section faq reveal" id="faq">
-      <div class="container">
-        <p class="section-tag">Frequently Asked Questions</p>
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="faq-list" id="faqList">
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              <span>Can I try a class before committing?</span>
-              <span class="faq-icon" aria-hidden="true">⌄</span>
-            </button>
-            <div class="faq-answer">
-              <p>Yes. We offer a free trial class so you can meet your teacher, understand the method, and confirm the class style fits your goals.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              <span>I am a beginner. Is this academy suitable for me?</span>
-              <span class="faq-icon" aria-hidden="true">⌄</span>
-            </button>
-            <div class="faq-answer">
-              <p>Absolutely. Faseeh Academy is designed for beginners and non-Arabic speakers, with step-by-step support to build confidence in recitation.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              <span>Do I need to know Arabic before joining?</span>
-              <span class="faq-icon" aria-hidden="true">⌄</span>
-            </button>
-            <div class="faq-answer">
-              <p>No. Lessons are delivered in English and Arabic, and teachers explain pronunciation and Tajweed clearly for non-Arabic speakers.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              <span>How are classes scheduled each week?</span>
-              <span class="faq-icon" aria-hidden="true">⌄</span>
-            </button>
-            <div class="faq-answer">
-              <p>Most students take a few focused sessions per week. Scheduling is flexible and arranged based on teacher availability and your routine.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              <span>What age groups do you teach?</span>
-              <span class="faq-icon" aria-hidden="true">⌄</span>
-            </button>
-            <div class="faq-answer">
-              <p>We teach children, women, and men. Some teachers specialize in children from both Arabic and non-Arabic backgrounds.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              <span>Which riwayah do you teach in?</span>
-              <span class="faq-icon" aria-hidden="true">⌄</span>
-            </button>
-            <div class="faq-answer">
-              <p>We teach in Riwayat Hafs 'An Asim, the most widely recited narration of the Quran across the world.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              <span>Can I take classes just to improve Tajweed without a full program?</span>
-              <span class="faq-icon" aria-hidden="true">⌄</span>
-            </button>
-            <div class="faq-answer">
-              <p>Yes. You can book a set of focused one-on-one lessons specifically for pronunciation correction and Tajweed improvement.</p>
-            </div>
-          </article>
+        <div class="story-slider reveal" data-story-slider>
+          <article class="story active"><div class="quote-mark">“</div><blockquote>For years I tried to correct my pronunciation alone. My teacher broke down every letter without ever making me feel behind. I now read with so much more confidence.</blockquote><p><strong>Fatima</strong><span>Adult learner · Canada</span></p></article>
+          <article class="story"><div class="quote-mark">“</div><blockquote>My son looks forward to his lessons. His teacher is calm, kind and knows how to keep him engaged while still making real progress.</blockquote><p><strong>Hassan</strong><span>Parent · Egypt</span></p></article>
+          <article class="story"><div class="quote-mark">“</div><blockquote>The explanation is clear and the schedule fits around work and family. It feels professional, but still very personal.</blockquote><p><strong>Aisha</strong><span>Adult learner · Germany</span></p></article>
         </div>
       </div>
     </section>
 
-    <section class="section cta reveal" id="contact">
-      <div class="container cta-box">
-        <h2>Start Your Quran Journey Today</h2>
-        <p>Book your <strong>free trial class</strong> and begin learning Quran with experienced teachers.</p>
-        <a class="btn btn-primary" href="https://wa.me/201149724588" target="_blank" rel="noopener noreferrer">Message Us on WhatsApp</a>
+    <section class="section faq" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-heading reveal">
+          <p class="eyebrow"><span></span> Before you begin</p>
+          <h2>A few helpful<br><em>answers.</em></h2>
+          <p>Still wondering about something?</p>
+          <a class="arrow-link" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Ask us on Messenger <span>↗</span></a>
+        </div>
+        <div class="faq-list reveal">
+          <article class="faq-item open"><button type="button" aria-expanded="true"><span>Can I try a lesson before joining?</span><i>−</i></button><div><p>Yes. Your first trial class is complimentary. You can meet a teacher, experience the teaching style and discuss the right learning path before committing.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span>I am a complete beginner. Is that okay?</span><i>+</i></button><div><p>Absolutely. Many Faseeh learners begin with little or no Arabic. Lessons start at your current level and build step by step.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span>Are classes suitable for children?</span><i>+</i></button><div><p>Yes. We offer focused 30-minute one-to-one sessions for children, with teachers who use a warm, age-appropriate approach.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span>Which recitation do you teach?</span><i>+</i></button><div><p>We currently teach Riwayat Hafs ‘an Asim, the most widely recited narration of the Quran worldwide.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span>How does scheduling work?</span><i>+</i></button><div><p>We arrange a consistent weekly schedule around teacher availability and your time zone. Message us and we will help find a suitable rhythm.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-cta" id="contact">
+      <div class="closing-pattern" aria-hidden="true"></div>
+      <div class="container closing-inner reveal">
+        <p class="eyebrow eyebrow-light"><span></span> Your first lesson is on us</p>
+        <h2>One gentle beginning<br>can change your <em>relationship</em><br>with the Quran.</h2>
+        <a class="btn btn-gold" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Book your complimentary trial <span aria-hidden="true">↗</span></a>
+        <p>No commitment. Just a conversation, a short assessment and your first lesson.</p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <h3>Faseeh Academy</h3>
-        <p>Professional online Quran education for beginners and non-Arabic speakers, focused on Tajweed improvement, Hifz foundations, and Arabic understanding.</p>
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#home"><img src="images/favicon.svg" alt="" width="46" height="46"><span class="brand-lockup"><strong>Faseeh</strong><small>Quran Academy</small></span></a>
+        <p><span class="footer-tagline">Online Quran education for non-Arabic speaking Muslims—taught with clarity, care and patience.</span><span class="mobile-location">Cairo, Egypt · Online worldwide</span></p>
       </div>
-      <div>
-        <h3>Quick Links</h3>
-        <ul class="clean-list footer-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#programs">Programs</a></li>
-          <li><a href="#teachers">Teachers</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <ul class="clean-list footer-links">
-          <li><a href="https://wa.me/971543968615" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-          <li><a href="https://facebook.com/faseehacademy" target="_blank" rel="noopener noreferrer" class="social-link"><span class="social-icon" aria-hidden="true">f</span>Facebook</a></li>
-          <li><a href="mailto:info@faseehacademy.com">info@faseehacademy.com</a></li>
-          <li>Currently based in Cairo, Egypt - expanding soon to Abu Dhabi, UAE.</li>
-        </ul>
-      </div>
+      <div><h3>Explore</h3><ul><li><a href="#programs">Programs</a></li><li><a href="#approach">Our approach</a></li><li><a href="teachers.html">Teachers</a></li><li><a href="#plans">Plans</a></li></ul></div>
+      <div><h3>Connect</h3><ul><li><a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Messenger</a></li><li><a href="mailto:faseehacademy3@gmail.com">Email: faseehacademy3@gmail.com</a></li><li><a href="https://facebook.com/faseehacademy" target="_blank" rel="noopener noreferrer">Facebook</a></li><li><a href="leave-review.html">Leave a review</a></li></ul></div>
+      <div><h3>Based in</h3><p>Cairo, Egypt<br><span>Expanding to Abu Dhabi, UAE</span></p></div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Faseeh Academy - All rights reserved.</p>
-    </div>
+    <div class="container footer-bottom"><p>© <span data-year></span> Faseeh Academy</p><p>Learning the words that light the heart.</p></div>
   </footer>
 
+  <script src="js/teachers.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
