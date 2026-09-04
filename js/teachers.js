@@ -1,52 +1,55 @@
 /*
-  Teacher specialties live in one place so the homepage and teachers page stay in sync.
-  Replace a profile object here when the academy is ready to publish a named teacher.
+  Temporary profile content lives here so real teacher details can replace it
+  without changing the page markup or carousel logic.
 */
 const FASEEH_TEACHERS = [
   {
-    monogram: 'ت',
-    name: 'Women’s Tajweed Mentor',
-    role: 'Recitation & pronunciation',
-    specialty: 'Women',
-    description: 'Patient, detail-focused support for women beginning their recitation or refining long-standing Tajweed habits.',
-    tags: ['English guidance', 'Tajweed', 'Adults'],
-    color: '#d7ddd2'
+    name: 'Ustadha Maryam A.',
+    gender: 'female',
+    role: 'Tajweed & Quran Recitation',
+    specialty: 'Women & children',
+    experience: '6 years',
+    qualifications: "Quran Ijazah – Hafs 'an 'Asim; Diploma in Tajweed Studies",
+    description: 'Supports beginners and developing readers with careful pronunciation correction and clear English explanations.',
+    tags: ['Tajweed', 'Makharij', 'Beginners'],
+    color: '#d9ded3',
+    accent: '#486e61'
   },
   {
-    monogram: 'ض',
-    name: 'Children’s Quran Mentor',
-    role: 'Young learners',
-    specialty: 'Children',
-    description: 'Warm, structured lessons that help children stay engaged while building strong reading and memorization habits.',
-    tags: ['Children', 'Reading', 'Hifz'],
-    color: '#ded2c0'
-  },
-  {
-    monogram: 'ق',
-    name: 'Men’s Quran Teacher',
-    role: 'Tajweed & Hifz',
+    name: 'Ustadh Ahmed K.',
+    gender: 'male',
+    role: 'Quran Memorization & Tajweed',
     specialty: 'Men & boys',
-    description: 'Clear one-to-one guidance for men and young boys working toward accurate recitation and consistent revision.',
-    tags: ['English guidance', 'Men', 'Hifz'],
-    color: '#c9d7d0'
+    experience: '7 years',
+    qualifications: 'BA in Islamic Studies; Advanced Tajweed training',
+    description: 'Guides students through structured memorization, revision and confident application of Tajweed rules.',
+    tags: ['Hifz', 'Tajweed', 'Revision'],
+    color: '#d7cdbf',
+    accent: '#7a654b'
   },
   {
-    monogram: 'ع',
-    name: 'Arabic Foundations Tutor',
-    role: 'Reading foundations',
-    specialty: 'Beginners',
-    description: 'Step-by-step teaching for learners who need to recognise letters, connect sounds and begin reading with confidence.',
-    tags: ['Arabic', 'Beginners', 'Children'],
-    color: '#d9d2c7'
+    name: 'Ustadha Sarah M.',
+    gender: 'female',
+    role: "Qira'iyya & Arabic Reading",
+    specialty: 'Children & beginners',
+    experience: '5 years',
+    qualifications: "Diploma in Arabic Language; Children's Quran teaching training",
+    description: 'Helps new learners move from Arabic letters to fluent reading through patient, age-appropriate lessons.',
+    tags: ["Qira'iyya", 'Arabic', 'Children'],
+    color: '#cedbd6',
+    accent: '#3e6a5d'
   },
   {
-    monogram: 'ح',
-    name: 'Memorization Coach',
-    role: 'Hifz & revision',
-    specialty: 'All levels',
-    description: 'A steady, realistic approach to memorization that balances new portions with the revision needed to retain them.',
-    tags: ['Hifz', 'Revision', 'Accountability'],
-    color: '#c8d3c4'
+    name: 'Ustadh Yusuf R.',
+    gender: 'male',
+    role: 'Makharij & Quran Reading',
+    specialty: 'Adults & youth',
+    experience: '4 years',
+    qualifications: 'Quran memorization graduate; Arabic teaching certificate',
+    description: 'Works with non-Arabic-speaking learners on articulation, reading fluency and steady recitation practice.',
+    tags: ['Makharij', 'Reading', 'Adults'],
+    color: '#d6d8c8',
+    accent: '#697352'
   }
 ];
 
@@ -54,16 +57,39 @@ const FASEEH_TEACHERS = [
   const sliders = document.querySelectorAll('[data-teacher-slider]');
   if (!sliders.length) return;
 
+  const avatar = (teacher) => teacher.gender === 'female'
+    ? `<svg class="teacher-avatar" viewBox="0 0 240 260" aria-hidden="true">
+        <path d="M38 252c5-65 35-99 82-99s77 34 82 99" fill="${teacher.accent}"/>
+        <path d="M68 162c-7-23-6-58 4-82 10-25 27-39 48-39s38 14 48 39c10 24 11 59 4 82-15-12-32-18-52-18s-37 6-52 18Z" fill="#f4f0e7"/>
+        <ellipse cx="120" cy="104" rx="34" ry="42" fill="#c99e7d"/>
+        <path d="M84 105c3-43 20-64 36-64s34 21 37 64c-8-24-20-36-37-36s-29 12-36 36Z" fill="${teacher.accent}"/>
+        <path d="M102 106h1M137 106h1M109 125c7 5 15 5 22 0" fill="none" stroke="#6d4c3d" stroke-width="3" stroke-linecap="round"/>
+        <path d="M72 154c13 18 29 27 48 27s35-9 48-27" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="3"/>
+      </svg>`
+    : `<svg class="teacher-avatar" viewBox="0 0 240 260" aria-hidden="true">
+        <path d="M37 252c6-61 35-94 83-94s77 33 83 94" fill="${teacher.accent}"/>
+        <path d="M101 143h38v35h-38z" fill="#b98566"/>
+        <ellipse cx="120" cy="101" rx="38" ry="48" fill="#c99e7d"/>
+        <path d="M80 88c4-34 19-51 40-51s36 17 40 51c-10-9-24-14-40-14s-30 5-40 14Z" fill="${teacher.accent}"/>
+        <path d="M84 63h72l-8-22H92l-8 22Z" fill="#f4f0e7" stroke="${teacher.accent}" stroke-width="3"/>
+        <path d="M101 102h1M138 102h1M105 127c10 10 20 10 30 0" fill="none" stroke="#6d4c3d" stroke-width="3" stroke-linecap="round"/>
+        <path d="M94 121c4 22 13 33 26 33s22-11 26-33c-7 8-16 12-26 12s-19-4-26-12Z" fill="#684c3c" opacity=".88"/>
+      </svg>`;
+
   const cardTemplate = (teacher) => `
     <article class="teacher-card">
-      <div class="teacher-portrait" style="--portrait-bg: ${teacher.color}">
+      <div class="teacher-portrait is-${teacher.gender}" style="--portrait-bg: ${teacher.color}">
         <span class="teacher-specialty">${teacher.specialty}</span>
-        <span class="teacher-monogram" aria-hidden="true">${teacher.monogram}</span>
+        ${avatar(teacher)}
       </div>
       <div class="teacher-card-body">
         <h3>${teacher.name}</h3>
         <p class="teacher-role">${teacher.role}</p>
         <p>${teacher.description}</p>
+        <dl class="teacher-details">
+          <div><dt>Experience</dt><dd>${teacher.experience}</dd></div>
+          <div><dt>Qualifications</dt><dd>${teacher.qualifications}</dd></div>
+        </dl>
         <div class="teacher-tags">${teacher.tags.map((tag) => `<span>${tag}</span>`).join('')}</div>
       </div>
     </article>`;
