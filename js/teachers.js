@@ -1,55 +1,79 @@
 /*
-  Temporary profile content lives here so real teacher details can replace it
-  without changing the page markup or carousel logic.
+  Temporary profile content lives here so real teacher details can be replaced
+  later without changing the page markup or carousel logic.
 */
 const FASEEH_TEACHERS = [
   {
-    name: 'Ustadha Maryam A.',
-    gender: 'female',
-    role: 'Tajweed & Quran Recitation',
-    specialty: 'Women & children',
-    experience: '6 years',
-    qualifications: "Quran Ijazah – Hafs 'an 'Asim; Diploma in Tajweed Studies",
-    description: 'Supports beginners and developing readers with careful pronunciation correction and clear English explanations.',
-    tags: ['Tajweed', 'Makharij', 'Beginners'],
-    color: '#d9ded3',
-    accent: '#486e61'
-  },
-  {
-    name: 'Ustadh Ahmed K.',
+    name: 'Ustadh Omar Khalid',
     gender: 'male',
-    role: 'Quran Memorization & Tajweed',
-    specialty: 'Men & boys',
-    experience: '7 years',
-    qualifications: 'BA in Islamic Studies; Advanced Tajweed training',
-    description: 'Guides students through structured memorization, revision and confident application of Tajweed rules.',
-    tags: ['Hifz', 'Tajweed', 'Revision'],
+    role: 'Quran & Tajweed Teacher',
+    languages: 'Arabic & English',
+    experience: '3+ years',
+    qualification: 'Ijazah in Hafs ‘an Asim',
+    teachingMethod: 'Noor Al-Bayan & Al-Nouraniyyah',
+    tags: ['Quran Recitation', 'Tajweed', 'Memorization'],
     color: '#d7cdbf',
     accent: '#7a654b'
   },
   {
-    name: 'Ustadha Sarah M.',
+    name: 'Ustadha Maryam Farid',
     gender: 'female',
-    role: "Qira'iyya & Arabic Reading",
-    specialty: 'Children & beginners',
-    experience: '5 years',
-    qualifications: "Diploma in Arabic Language; Children's Quran teaching training",
-    description: 'Helps new learners move from Arabic letters to fluent reading through patient, age-appropriate lessons.',
-    tags: ["Qira'iyya", 'Arabic', 'Children'],
+    role: 'Quran & Tajweed Teacher',
+    languages: 'Arabic & English',
+    experience: '4+ years',
+    qualification: 'Ijazah in Hafs ‘an Asim',
+    teachingMethod: 'Noor Al-Bayan & Al-Nouraniyyah',
+    tags: ['Quran Recitation', 'Tajweed', 'Memorization'],
+    color: '#d9ded3',
+    accent: '#486e61'
+  },
+  {
+    name: 'Ustadh Ibrahim Hassan',
+    gender: 'male',
+    role: 'Quran & Tajweed Teacher',
+    languages: 'Arabic & English',
+    experience: '5+ years',
+    qualification: 'Ijazah in Hafs ‘an Asim',
+    teachingMethod: 'Noor Al-Bayan & Al-Nouraniyyah',
+    tags: ['Quran Recitation', 'Tajweed', 'Memorization'],
+    color: '#d6d8c8',
+    accent: '#697352'
+  },
+  {
+    name: 'Ustadha Amina Saeed',
+    gender: 'female',
+    role: 'Quran & Tajweed Teacher',
+    languages: 'Arabic & English',
+    experience: '6+ years',
+    qualification: 'Ijazah in Hafs ‘an Asim',
+    teachingMethod: 'Noor Al-Bayan & Al-Nouraniyyah',
+    tags: ['Quran Recitation', 'Tajweed', 'Memorization'],
     color: '#cedbd6',
     accent: '#3e6a5d'
   },
   {
-    name: 'Ustadh Yusuf R.',
+    name: 'Ustadh Yusuf Kareem',
     gender: 'male',
-    role: 'Makharij & Quran Reading',
-    specialty: 'Adults & youth',
-    experience: '4 years',
-    qualifications: 'Quran memorization graduate; Arabic teaching certificate',
-    description: 'Works with non-Arabic-speaking learners on articulation, reading fluency and steady recitation practice.',
-    tags: ['Makharij', 'Reading', 'Adults'],
-    color: '#d6d8c8',
-    accent: '#697352'
+    role: 'Quran & Tajweed Teacher',
+    languages: 'Arabic & English',
+    experience: '8+ years',
+    qualification: 'Ijazah in Hafs ‘an Asim',
+    teachingMethod: 'Noor Al-Bayan & Al-Nouraniyyah',
+    tags: ['Quran Recitation', 'Tajweed', 'Memorization'],
+    color: '#d8d1bf',
+    accent: '#6d5b43'
+  },
+  {
+    name: 'Ustadha Sarah Ahmed',
+    gender: 'female',
+    role: 'Quran & Tajweed Teacher',
+    languages: 'Arabic & English',
+    experience: '10+ years',
+    qualification: 'Ijazah in Hafs ‘an Asim',
+    teachingMethod: 'Noor Al-Bayan & Al-Nouraniyyah',
+    tags: ['Quran Recitation', 'Tajweed', 'Memorization'],
+    color: '#d8ded0',
+    accent: '#526f62'
   }
 ];
 
@@ -79,16 +103,16 @@ const FASEEH_TEACHERS = [
   const cardTemplate = (teacher) => `
     <article class="teacher-card">
       <div class="teacher-portrait is-${teacher.gender}" style="--portrait-bg: ${teacher.color}">
-        <span class="teacher-specialty">${teacher.specialty}</span>
+        <span class="teacher-specialty">${teacher.languages}</span>
         ${avatar(teacher)}
       </div>
       <div class="teacher-card-body">
         <h3>${teacher.name}</h3>
         <p class="teacher-role">${teacher.role}</p>
-        <p>${teacher.description}</p>
         <dl class="teacher-details">
           <div><dt>Experience</dt><dd>${teacher.experience}</dd></div>
-          <div><dt>Qualifications</dt><dd>${teacher.qualifications}</dd></div>
+          <div><dt>Qualification</dt><dd>${teacher.qualification}</dd></div>
+          <div><dt>Teaching</dt><dd>${teacher.teachingMethod}</dd></div>
         </dl>
         <div class="teacher-tags">${teacher.tags.map((tag) => `<span>${tag}</span>`).join('')}</div>
       </div>
