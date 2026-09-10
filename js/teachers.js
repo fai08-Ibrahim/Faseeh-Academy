@@ -12,12 +12,12 @@
       empty: 'Teacher profiles are being updated. Contact us to find your teacher.'
     },
     ar: {
-      carousel: 'ملفات المعلّمين', carouselType: 'عارض شرائح', slideType: 'شريحة',
+      carousel: 'بطاقات المعلّمين', carouselType: 'عارض شرائح', slideType: 'بطاقة',
       previous: 'السابق', next: 'التالي', previousLabel: 'عرض المعلّم السابق', nextLabel: 'عرض المعلّم التالي',
       qualification: 'المؤهل', teaching: 'خبرة في تدريس', specialties: 'التخصصات',
-      experience: 'سنوات في التدريس', browse: 'اسحب لاستكشاف المعلّمين', browseDesktop: 'تعرّف على الفريق',
+      experience: 'سنوات خبرة', browse: 'اسحب للتعرّف على معلمينا', browseDesktop: 'تعرّف على معلمينا',
       position: 'التنقل بين المعلّمين', show: 'عرض المعلّم', of: 'من',
-      empty: 'نعمل على تحديث ملفات المعلّمين. تواصل معنا لاختيار المعلّم المناسب.'
+      empty: 'نحدّث بيانات معلمينا حاليًا. تواصل معنا لنساعدك على اختيار معلمك.'
     }
   };
   const language = () => window.FaseehI18n?.language === 'ar' ? 'ar' : 'en';
