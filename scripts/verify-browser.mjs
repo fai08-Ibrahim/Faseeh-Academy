@@ -2,6 +2,7 @@
  * Dependency-free responsive browser audit (Node 22+, Chrome or Edge).
  * Run: node scripts/verify-browser.mjs [--baseline]
  * Focused retry: --pages=teachers.html --widths=320,390 --languages=en,ar
+ * Booking integration: --pages=booking.html --booking-flow (mocked delivery only)
  * Serves the working tree locally; reports and screenshots stay in OS temp.
  * No packages, website changes, form submissions, or external writes required.
  */
@@ -11,6 +12,7 @@ import { access, mkdtemp, readFile, writeFile, mkdir } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { verifyBooking } from './verify-booking.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const baseline = process.argv.includes('--baseline');
@@ -99,10 +101,12 @@ try {
   await send('Page.enable');
   await send('Runtime.enable');
   await send('Network.enable');
+  // Audits never send real registrations, including accidental native submits.
+  await send('Network.setBlockedURLs', { urls: ['*://formsubmit.co/*', '*://*.formsubmit.co/*'] });
   await send('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-reduced-motion', value: 'reduce' }] });
   const sizes = option('widths')?.map(Number) || (baseline ? [390, 1440] : [320, 390, 820, 1440]);
   const languages = option('languages') || (baseline ? ['en'] : ['en', 'ar']);
-  const pages = option('pages') || (baseline ? ['index.html', 'teachers.html'] : ['index.html', 'teachers.html', 'about.html', 'leave-review.html']);
+  const pages = option('pages') || (baseline ? ['index.html', 'teachers.html'] : ['index.html', 'teachers.html', 'about.html', 'leave-review.html', 'booking.html']);
   for (const width of sizes) {
     const height = width < 600 ? 844 : 1000;
     await send('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: 1, mobile: width < 600 });
@@ -227,14 +231,14 @@ try {
             await evaluate(`document.activeElement.blur(); window.scrollTo({top: 0, behavior: 'instant'})`);
           }
         }
-        const fullPage = [390, 1440].includes(width) && ['index.html', 'teachers.html'].includes(page);
+        const fullPage = [390, 1440].includes(width) && ['index.html', 'teachers.html', 'booking.html'].includes(page);
         const size = await evaluate(`({ width: document.documentElement.clientWidth, height: document.documentElement.scrollHeight })`);
         const screenshot = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: fullPage, ...(fullPage ? { clip: { x: 0, y: 0, width: size.width, height: size.height, scale: 1 } } : {}) });
         report.screenshot = path.join(outputDir, `${page.replace('.html', '')}-${language}-${width}${fullPage ? '-full' : ''}.png`);
         await writeFile(report.screenshot, Buffer.from(screenshot.data, 'base64'));
         if (fullPage) {
           report.sectionScreenshots = [];
-          const sections = page === 'index.html' ? ['.hero', '#programs', '#plans', '.footer'] : ['.teachers-page-section'];
+          const sections = page === 'index.html' ? ['.hero', '#programs', '#plans', '.footer'] : page === 'booking.html' ? ['.booking-choices', '#bookingForm'] : ['.teachers-page-section'];
           for (const selector of sections) {
             const bounds = await evaluate(`(() => { const el = document.querySelector(${JSON.stringify(selector)}); if (!el) return null; const r = el.getBoundingClientRect(); return {x: Math.max(0, r.left + scrollX), y: Math.max(0, r.top + scrollY), width: Math.min(innerWidth, r.width), height: r.height, scale: 1}; })()`);
             if (!bounds) continue;
@@ -270,6 +274,12 @@ try {
         console.log(JSON.stringify({ page: currentPage, errors: report.errors, lang: report.lang, overflow: report.overflow, screenshot: report.screenshot }));
       }
     }
+  }
+  if (process.argv.includes('--booking-flow')) {
+    currentPage = 'booking.html:mocked-flow';
+    const bookingReports = await verifyBooking({ evaluate, send, wait, origin });
+    reports.push(...bookingReports);
+    for (const report of bookingReports) console.log(JSON.stringify(report));
   }
   // Revisit an unqualified URL after Arabic navigation to verify English default.
   await send('Page.navigate', { url: `${origin}/index.html` });
