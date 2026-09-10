@@ -3,92 +3,95 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Personal online Quran, Tajweed and Arabic lessons for English-speaking Muslims. Learn one-to-one with patient teachers at Faseeh Academy.">
+  <meta name="description" content="Personal online Quran, Tajweed and Arabic lessons for English-speaking Muslims. Learn one-to-one with patient teachers at Faseeh Academy." data-i18n-content="home.description">
   <meta name="theme-color" content="#082f25">
-  <title>Online Quran &amp; Tajweed Lessons | Faseeh Academy</title>
+  <title data-i18n="home.title">Online Quran &amp; Tajweed Lessons | Faseeh Academy</title>
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/refinements.css">
+  <link rel="stylesheet" href="css/i18n.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="site.skip">Skip to content</a>
 
   <div class="announcement">
     <div class="container announcement-inner">
-      <p><span class="status-dot" aria-hidden="true"></span> New student places are open</p>
-      <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">BOOK YOUR FREE ASSESSMENT <span aria-hidden="true">↗</span></a>
+      <p data-i18n-text="site.openings"><span class="status-dot" aria-hidden="true"></span> New student places are open</p>
+      <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n-text="cta.assessment">BOOK YOUR FREE ASSESSMENT <span aria-hidden="true">↗</span></a>
     </div>
   </div>
 
   <header class="site-header" id="home">
-    <nav class="navbar container" aria-label="Primary navigation">
-      <a class="brand" href="index.html" aria-label="Faseeh Academy home">
-        <img src="images/logo.jpg" alt="Faseeh Academy — Quran for all Muslims" class="official-logo" width="92" height="68">
+    <nav class="navbar container" aria-label="Primary navigation" data-i18n-aria-label="nav.primary">
+      <a class="brand" href="index.html" aria-label="Faseeh Academy home" data-i18n-aria-label="site.home">
+        <img src="images/logo.jpg" alt="Faseeh Academy — Quran for all Muslims" class="official-logo" width="92" height="68" data-i18n-alt="site.logo">
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation">
+      <a class="language-switch" data-language-switch href="?lang=ar" lang="ar" hreflang="ar" aria-label="View this website in Arabic" data-i18n-aria-label="nav.languageArabic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-5 5-5 13 0 18M12 3c5 5 5 13 0 18"/></svg><span>العربية</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation" data-i18n-aria-label="nav.open">
         <span></span><span></span>
       </button>
 
       <div class="nav-menu" id="navMenu">
         <ul class="nav-links">
-          <li><a href="#programs">Programs</a></li>
-          <li><a href="#approach">Our approach</a></li>
-          <li><a href="#plans">Plans</a></li>
-          <li><a href="teachers.html">Teachers</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="#programs" data-i18n="nav.programs">Programs</a></li>
+          <li><a href="#approach" data-i18n="nav.approach">Our approach</a></li>
+          <li><a href="#plans" data-i18n="nav.plans">Plans</a></li>
+          <li><a href="teachers.html" data-i18n="nav.teachers">Teachers</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
         </ul>
-        <a class="text-link nav-contact" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Messenger</a>
-        <a class="btn btn-small btn-primary" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">BOOK YOUR FREE ASSESSMENT</a>
+        <a class="text-link nav-contact" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n="nav.messenger">Messenger</a>
+        <a class="btn btn-small btn-primary" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n="cta.assessment">BOOK YOUR FREE ASSESSMENT</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero">
-      <div class="hero-media" role="img" aria-label="A Muslim learner attending a live online Quran lesson with a teacher"></div>
+      <div class="hero-media" role="img" aria-label="A Muslim learner attending a live online Quran lesson with a teacher" data-i18n-aria-label="hero.image"></div>
       <div class="hero-shade"></div>
       <div class="container hero-inner">
         <div class="hero-copy reveal">
-          <p class="eyebrow eyebrow-light"><span></span> Live online learning with English support</p>
-          <h1>Online Quran &amp;<br><em>Tajweed Lessons.</em></h1>
-          <p class="hero-lead">Personal guidance for non-Arabic-speaking Muslims—from first letters to confident recitation.</p>
-          <p class="hero-offer">FREE Assessment &amp; Trial Session.</p>
+          <p class="eyebrow eyebrow-light" data-i18n-text="hero.eyebrow"><span></span> Live online learning with English support</p>
+          <h1 data-i18n-text="hero.title">Online Quran &amp;<br><em data-i18n="hero.titleEm">Tajweed Lessons.</em></h1>
+          <p class="hero-lead" data-i18n="hero.lead">Personal guidance for non-Arabic-speaking Muslims—from first letters to confident recitation.</p>
+          <p class="hero-offer" data-i18n="hero.offer">FREE Assessment &amp; Trial Session.</p>
           <div class="hero-actions">
-            <a class="btn btn-gold" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">BOOK YOUR FREE ASSESSMENT <span aria-hidden="true">↗</span></a>
-            <a class="btn btn-ghost" href="#programs">Explore programs</a>
+            <a class="btn btn-gold" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n-text="cta.assessment">BOOK YOUR FREE ASSESSMENT <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" href="#programs" data-i18n="hero.explore">Explore programs</a>
           </div>
-          <p class="micro-proof"><span class="student-faces" aria-hidden="true"><i>O</i><i>F</i><i>Y</i></span> Trusted by learners across the UK, US, Canada and beyond</p>
+          <p class="micro-proof" data-i18n="hero.proof">Flexible lessons · Personal guidance · English support</p>
         </div>
 
-        <aside class="hero-note reveal" aria-label="Academy highlights">
-          <p class="hero-note-label">The Faseeh promise</p>
-          <blockquote>“We meet you at your level, then walk with you—letter by letter.”</blockquote>
+        <aside class="hero-note reveal" aria-label="Academy highlights" data-i18n-aria-label="hero.highlights">
+          <p class="hero-note-label" data-i18n="hero.promise">The Faseeh promise</p>
+          <blockquote data-i18n="hero.quote">“We meet you at your level, then walk with you—letter by letter.”</blockquote>
           <div class="hero-note-stats">
-            <div><strong>30/60</strong><span>Minute lesson options</span></div>
-            <div><strong>4+</strong><span>Years' teaching experience</span></div>
-            <div><strong>2</strong><span>Teaching languages</span></div>
+            <div><strong>30/60</strong><span data-i18n="hero.minutes">Minute lesson options</span></div>
+            <div><strong>3+</strong><span data-i18n="hero.experience">Years' teaching experience</span></div>
+            <div><strong>2</strong><span data-i18n="hero.languages">Teaching languages</span></div>
           </div>
         </aside>
       </div>
-      <a class="scroll-cue" href="#programs"><span>Scroll to discover</span><i aria-hidden="true">↓</i></a>
+      <a class="scroll-cue" href="#programs"><span data-i18n="hero.scroll">Scroll to discover</span><i aria-hidden="true">↓</i></a>
     </section>
 
     <section class="why-faseeh" aria-labelledby="whyFaseehTitle">
       <div class="container why-faseeh-inner reveal">
         <div class="why-faseeh-heading">
-          <p class="eyebrow"><span></span> Why Faseeh?</p>
-          <h2 id="whyFaseehTitle">Learning built<br><em>around you.</em></h2>
-          <p>Choose the tier that fits your goals, learning needs and budget.</p>
+          <p class="eyebrow" data-i18n-text="why.eyebrow"><span></span> Why Faseeh?</p>
+          <h2 id="whyFaseehTitle" data-i18n-text="why.title">Learning built<br><em data-i18n="why.titleEm">around you.</em></h2>
+          <p data-i18n="why.intro">Choose the tier that fits your goals, learning needs and budget.</p>
         </div>
         <div class="why-faseeh-points">
-          <p><span aria-hidden="true">01</span>Qualified &amp; Experienced Teachers</p>
-          <p><span aria-hidden="true">02</span>Personalized 1-to-1 Lessons</p>
-          <p><span aria-hidden="true">03</span>English-Supported Learning</p>
-          <p><span aria-hidden="true">04</span>Personalized Progress &amp; Feedback</p>
-          <p><span aria-hidden="true">05</span>Flexible Tiers for Different Goals &amp; Budgets</p>
+          <p data-i18n-text="why.qualified"><span aria-hidden="true">01</span>Qualified &amp; Experienced Teachers</p>
+          <p data-i18n-text="why.personal"><span aria-hidden="true">02</span>Personalized 1-to-1 Lessons</p>
+          <p data-i18n-text="why.english"><span aria-hidden="true">03</span>English-Supported Learning</p>
+          <p data-i18n-text="why.feedback"><span aria-hidden="true">04</span>Personalized Progress &amp; Feedback</p>
+          <p data-i18n-text="why.tiers"><span aria-hidden="true">05</span>Flexible Tiers for Different Goals &amp; Budgets</p>
         </div>
       </div>
     </section>
@@ -97,10 +100,10 @@
       <div class="container">
         <div class="section-intro reveal">
           <div>
-            <p class="eyebrow"><span></span> Programs we offer</p>
-            <h2>Programs We Offer<br><em>for every level.</em></h2>
+            <p class="eyebrow" data-i18n-text="programs.eyebrow"><span></span> Programs we offer</p>
+            <h2 data-i18n-text="programs.title">Programs We Offer<br><em data-i18n="programs.titleEm">for every level.</em></h2>
           </div>
-          <p>Focused online programs for Quran, Tajweed and Arabic reading.</p>
+          <p data-i18n="programs.intro">Focused online programs for Quran, Tajweed and Arabic reading.</p>
         </div>
 
         <div class="program-grid program-grid-six">
@@ -110,10 +113,10 @@
               <svg viewBox="0 0 48 48"><path d="M8 13c6-3 11-3 16 1v25c-5-4-10-4-16-1V13Zm32 0c-6-3-11-3-16 1v25c5-4 10-4 16-1V13Z"/><path d="M24 14v25"/></svg>
             </div>
             <div>
-              <h3>Quran Memorization</h3>
-              <p>Structured memorization with consistent revision and guidance.</p>
+              <h3 data-i18n="programs.memorization">Quran Memorization</h3>
+              <p data-i18n="programs.memorizationDesc">Structured memorization with consistent revision and guidance.</p>
             </div>
-            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about Quran Memorization">Ask about this program <span>→</span></a>
+            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about Quran Memorization" data-i18n-text="programs.ask" data-i18n-aria-label="programs.memorizationAsk">Ask about this program <span>→</span></a>
           </article>
 
           <article class="program-card reveal">
@@ -122,10 +125,10 @@
               <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M16 25l5 5 11-12"/></svg>
             </div>
             <div>
-              <h3>Tajweed for Beginners</h3>
-              <p>Learn essential Tajweed rules through clear, guided practice.</p>
+              <h3 data-i18n="programs.beginner">Tajweed for Beginners</h3>
+              <p data-i18n="programs.beginnerDesc">Learn essential Tajweed rules through clear, guided practice.</p>
             </div>
-            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about Tajweed for Beginners">Ask about this program <span>→</span></a>
+            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about Tajweed for Beginners" data-i18n-text="programs.ask" data-i18n-aria-label="programs.beginnerAsk">Ask about this program <span>→</span></a>
           </article>
 
           <article class="program-card reveal">
@@ -134,10 +137,10 @@
               <svg viewBox="0 0 48 48"><path d="M11 36V12h26v24H11Z"/><path d="M17 19h14M17 25h14M17 31h8"/></svg>
             </div>
             <div>
-              <h3>Tajweed for Intermediate</h3>
-              <p>Strengthen rule application, fluency and accuracy in recitation.</p>
+              <h3 data-i18n="programs.intermediate">Tajweed for Intermediate</h3>
+              <p data-i18n="programs.intermediateDesc">Strengthen rule application, fluency and accuracy in recitation.</p>
             </div>
-            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about Tajweed for Intermediate">Ask about this program <span>→</span></a>
+            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about Tajweed for Intermediate" data-i18n-text="programs.ask" data-i18n-aria-label="programs.intermediateAsk">Ask about this program <span>→</span></a>
           </article>
 
           <article class="program-card reveal">
@@ -146,10 +149,10 @@
               <svg viewBox="0 0 48 48"><path d="M12 26c7-12 17-12 24 0M16 31c5-8 11-8 16 0"/><circle cx="24" cy="35" r="2"/></svg>
             </div>
             <div>
-              <h3>Makharij Course</h3>
-              <p>Develop correct pronunciation by learning each letter’s articulation point.</p>
+              <h3 data-i18n="programs.makharij">Makharij Course</h3>
+              <p data-i18n="programs.makharijDesc">Develop correct pronunciation by learning each letter’s articulation point.</p>
             </div>
-            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about the Makharij Course">Ask about this program <span>→</span></a>
+            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about the Makharij Course" data-i18n-text="programs.ask" data-i18n-aria-label="programs.makharijAsk">Ask about this program <span>→</span></a>
           </article>
 
           <article class="program-card reveal">
@@ -158,10 +161,10 @@
               <svg viewBox="0 0 48 48"><path d="M13 10h22v28H13z"/><path d="M18 17h12M18 24h8M18 31h12"/></svg>
             </div>
             <div>
-              <h3>Qira'iyya Course</h3>
-              <p>From learning Arabic letters to reading the Quran fluently and confidently.</p>
+              <h3 data-i18n="programs.qiraiyya">Qira'iyya Course</h3>
+              <p data-i18n="programs.qiraiyyaDesc">From learning Arabic letters to reading the Quran fluently and confidently.</p>
             </div>
-            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about the Qira'iyya Course">Ask about this program <span>→</span></a>
+            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about the Qira'iyya Course" data-i18n-text="programs.ask" data-i18n-aria-label="programs.qiraiyyaAsk">Ask about this program <span>→</span></a>
           </article>
 
           <article class="program-card reveal">
@@ -170,10 +173,10 @@
               <svg viewBox="0 0 48 48"><path d="M10 35h28M15 30l14-14 5 5-14 14-7 2 2-7Z"/><path d="m27 18 5 5"/></svg>
             </div>
             <div>
-              <h3>Arabic Reading &amp; Writing</h3>
-              <p>Reading, writing and fundamental Arabic rules.</p>
+              <h3 data-i18n="programs.arabic">Arabic Reading &amp; Writing</h3>
+              <p data-i18n="programs.arabicDesc">Reading, writing and fundamental Arabic rules.</p>
             </div>
-            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about Arabic Reading and Writing">Ask about this program <span>→</span></a>
+            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" aria-label="Ask about Arabic Reading and Writing" data-i18n-text="programs.ask" data-i18n-aria-label="programs.arabicAsk">Ask about this program <span>→</span></a>
           </article>
         </div>
       </div>
@@ -182,13 +185,13 @@
     <section class="section assessment" id="assessment">
       <div class="container assessment-box reveal">
         <div>
-          <p class="eyebrow"><span></span> Free assessment &amp; trial</p>
-          <h2>Begin with the<br><em>right next step.</em></h2>
+          <p class="eyebrow" data-i18n-text="assessment.eyebrow"><span></span> Free assessment &amp; trial</p>
+          <h2 data-i18n-text="assessment.title">Begin with the<br><em data-i18n="assessment.titleEm">right next step.</em></h2>
         </div>
         <div class="assessment-copy">
-          <p>Meet a teacher, assess your current level and experience a live lesson before choosing a program.</p>
-          <ul><li>No commitment</li><li>Personal level assessment</li><li>Recommended learning path</li></ul>
-          <a class="btn btn-primary" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">BOOK YOUR FREE ASSESSMENT <span aria-hidden="true">↗</span></a>
+          <p data-i18n="assessment.intro">Meet a teacher, assess your current level and experience a live lesson before choosing a program.</p>
+          <ul><li data-i18n="assessment.noCommitment">No commitment</li><li data-i18n="assessment.level">Personal level assessment</li><li data-i18n="assessment.path">Recommended learning path</li></ul>
+          <a class="btn btn-primary" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n-text="cta.assessment">BOOK YOUR FREE ASSESSMENT <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -199,21 +202,21 @@
           <div class="arch arch-back"></div>
           <div class="arch arch-front">
             <p>اقْرَأْ</p>
-            <span>Begin with one letter</span>
+            <span data-i18n="approach.visual">Begin with one letter</span>
           </div>
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
         </div>
 
         <div class="approach-copy">
-          <p class="eyebrow reveal"><span></span> How it works</p>
-          <h2 class="reveal">Four clear steps.<br><em>One personal journey.</em></h2>
-          <p class="approach-lead reveal">A simple process from first conversation to consistent learning.</p>
+          <p class="eyebrow reveal" data-i18n-text="approach.eyebrow"><span></span> How it works</p>
+          <h2 class="reveal" data-i18n-text="approach.title">Four clear steps.<br><em data-i18n="approach.titleEm">One personal journey.</em></h2>
+          <p class="approach-lead reveal" data-i18n="approach.intro">A simple process from first conversation to consistent learning.</p>
           <ol class="method-list">
-            <li class="reveal"><span>01</span><div><h3>Book your free assessment</h3><p>Tell us your goals, level and preferred schedule.</p></div></li>
-            <li class="reveal"><span>02</span><div><h3>Meet your teacher</h3><p>Experience the teaching style in your free trial session.</p></div></li>
-            <li class="reveal"><span>03</span><div><h3>Get your personalized plan</h3><p>Receive a clear learning path shaped around your needs.</p></div></li>
-            <li class="reveal"><span>04</span><div><h3>Start learning</h3><p>Choose your lesson length and build steady progress.</p></div></li>
+            <li class="reveal"><span>01</span><div><h3 data-i18n="approach.step1">Book your free assessment</h3><p data-i18n="approach.step1Desc">Tell us your goals, level and preferred schedule.</p></div></li>
+            <li class="reveal"><span>02</span><div><h3 data-i18n="approach.step2">Meet your teacher</h3><p data-i18n="approach.step2Desc">Experience the teaching style in your free trial session.</p></div></li>
+            <li class="reveal"><span>03</span><div><h3 data-i18n="approach.step3">Get your personalized plan</h3><p data-i18n="approach.step3Desc">Receive a clear learning path shaped around your needs.</p></div></li>
+            <li class="reveal"><span>04</span><div><h3 data-i18n="approach.step4">Start learning</h3><p data-i18n="approach.step4Desc">Choose your lesson length and build steady progress.</p></div></li>
           </ol>
         </div>
       </div>
@@ -222,43 +225,43 @@
     <section class="section plans" id="plans">
       <div class="container">
         <div class="plans-heading reveal">
-          <p class="eyebrow eyebrow-light"><span></span> Clear hourly pricing</p>
-          <h2>Choose the support<br><em>that fits you.</em></h2>
-          <p>Simple hourly rates with flexible lesson lengths and frequency.</p>
+          <p class="eyebrow eyebrow-light" data-i18n-text="pricing.eyebrow"><span></span> Clear hourly pricing</p>
+          <h2 data-i18n-text="pricing.title">Choose the support<br><em data-i18n="pricing.titleEm">that fits you.</em></h2>
+          <p data-i18n="pricing.intro">Simple hourly rates with flexible lesson lengths and frequency.</p>
         </div>
 
         <div class="pricing-clarity reveal">
-          <strong>Prices are per hour, not per month.</strong>
-          <span>Choose 30-minute or 1-hour lessons and set the frequency around your schedule.</span>
+          <strong data-i18n="pricing.clarity">Prices are per hour, not per month.</strong>
+          <span data-i18n="pricing.schedule">Choose 30-minute or 1-hour lessons and set the frequency around your schedule.</span>
         </div>
 
         <div class="tier-grid reveal">
           <article class="price-card tier-halaqah">
-            <p class="price-name">Halaqah</p>
-            <div class="price"><strong>$7</strong><span>per hour</span></div>
-            <p class="tier-intro">An accessible starting point for guided Quran learning.</p>
-            <ul><li>Small groups of up to 4 students</li><li>Certified native teachers</li><li>Affordable, engaging learning</li></ul>
-            <a class="btn btn-tier" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Choose Halaqah <span aria-hidden="true">↗</span></a>
-            <p class="tier-best">A clear, affordable way to begin.</p>
+            <p class="price-name" data-i18n="pricing.halaqah">Halaqah</p>
+            <div class="price"><strong>$7</strong><span data-i18n="pricing.unit">per hour</span></div>
+            <p class="tier-intro" data-i18n="pricing.halaqahDesc">An accessible starting point for guided Quran learning.</p>
+            <ul><li data-i18n="pricing.group">Small groups of up to 4 students</li><li data-i18n="pricing.native">Certified native teachers</li><li data-i18n="pricing.affordable">Affordable, engaging learning</li></ul>
+            <a class="btn btn-tier" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n-text="pricing.chooseHalaqah">Choose Halaqah <span aria-hidden="true">↗</span></a>
+            <p class="tier-best" data-i18n="pricing.halaqahBest">A clear, affordable way to begin.</p>
           </article>
 
           <article class="price-card tier-private">
-            <p class="price-badge">Most chosen</p>
-            <p class="price-name">Private</p>
-            <div class="price"><strong>$10</strong><span>per hour</span></div>
-            <p class="tier-intro">Dedicated one-to-one teaching with a plan built around you.</p>
-            <ul><li>One-to-one class with your teacher</li><li>Report after every class</li><li>Customized monthly study plan</li></ul>
-            <a class="btn btn-tier" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Choose Private <span aria-hidden="true">↗</span></a>
-            <p class="tier-best">Best for focused progress with personal guidance.</p>
+            <p class="price-badge" data-i18n="pricing.popular">Recommended</p>
+            <p class="price-name" data-i18n="pricing.private">Private</p>
+            <div class="price"><strong>$10</strong><span data-i18n="pricing.unit">per hour</span></div>
+            <p class="tier-intro" data-i18n="pricing.privateDesc">Dedicated one-to-one teaching with a plan built around you.</p>
+            <ul><li data-i18n="pricing.oneToOne">One-to-one class with your teacher</li><li data-i18n="pricing.report">Report after every class</li><li data-i18n="pricing.studyPlan">Customized monthly study plan</li></ul>
+            <a class="btn btn-tier" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n-text="pricing.choosePrivate">Choose Private <span aria-hidden="true">↗</span></a>
+            <p class="tier-best" data-i18n="pricing.privateBest">Best for focused progress with personal guidance.</p>
           </article>
 
           <article class="price-card tier-excellence">
-            <p class="price-name">Excellence</p>
-            <div class="price"><strong>$15</strong><span>per hour</span></div>
-            <p class="tier-intro">Our highest level of personal support and flexibility.</p>
-            <ul><li>Everything in Private</li><li>Free recorded classes</li><li>Direct teacher contact outside class</li></ul>
-            <a class="btn btn-tier" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Choose Excellence <span aria-hidden="true">↗</span></a>
-            <p class="tier-best">Best for learners who want deeper support and flexibility.</p>
+            <p class="price-name" data-i18n="pricing.excellence">Excellence</p>
+            <div class="price"><strong>$15</strong><span data-i18n="pricing.unit">per hour</span></div>
+            <p class="tier-intro" data-i18n="pricing.excellenceDesc">Our highest level of personal support and flexibility.</p>
+            <ul><li data-i18n="pricing.everything">Everything in Private</li><li data-i18n="pricing.recordings">Free recorded classes</li><li data-i18n="pricing.contact">Direct teacher contact outside class</li></ul>
+            <a class="btn btn-tier" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n-text="pricing.chooseExcellence">Choose Excellence <span aria-hidden="true">↗</span></a>
+            <p class="tier-best" data-i18n="pricing.excellenceBest">Best for learners who want deeper support and flexibility.</p>
           </article>
         </div>
       </div>
@@ -268,21 +271,21 @@
       <div class="container">
         <div class="section-intro compact-intro reveal">
           <div>
-            <p class="eyebrow"><span></span> Teachers you can trust</p>
-            <h2>Qualified guidance.<br><em>Personal support.</em></h2>
+            <p class="eyebrow" data-i18n-text="teachers.eyebrow"><span></span> Teachers you can trust</p>
+            <h2 data-i18n-text="teachers.title">Qualified guidance.<br><em data-i18n="teachers.titleEm">Personal support.</em></h2>
           </div>
           <div class="section-intro-side">
-            <p>Experienced Quran and Tajweed specialists who communicate clearly in English and teach with patience.</p>
-            <a class="arrow-link" href="teachers.html">Meet our teachers <span aria-hidden="true">→</span></a>
+            <p data-i18n="teachers.intro">Experienced Quran and Tajweed specialists who communicate clearly in English and teach with patience.</p>
+            <a class="arrow-link" href="teachers.html" data-i18n-text="teachers.meet">Meet our teachers <span aria-hidden="true">→</span></a>
           </div>
         </div>
         <div class="benefits-grid reveal">
-          <p><span>01</span>Qualified Quran &amp; Tajweed Specialists</p>
-          <p><span>02</span>4+ Years of Teaching Experience</p>
-          <p><span>03</span>Fluent English Communication</p>
-          <p><span>04</span>Personalized One-to-One Lessons</p>
-          <p><span>05</span>Patient &amp; Supportive Teaching</p>
-          <p><span>06</span>Level-Based Learning &amp; Feedback</p>
+          <p data-i18n-text="teachers.qualified"><span>01</span>Qualified Quran &amp; Tajweed Specialists</p>
+          <p data-i18n-text="teachers.experience"><span>02</span>Experience at Every Level</p>
+          <p data-i18n-text="teachers.english"><span>03</span>Fluent English Communication</p>
+          <p data-i18n-text="teachers.personal"><span>04</span>Personalized One-to-One Lessons</p>
+          <p data-i18n-text="teachers.patient"><span>05</span>Patient &amp; Supportive Teaching</p>
+          <p data-i18n-text="teachers.levelFeedback"><span>06</span>Level-Based Learning &amp; Feedback</p>
         </div>
       </div>
     </section>
@@ -290,16 +293,16 @@
     <section class="section stories">
       <div class="container stories-grid">
         <div class="stories-heading reveal">
-          <p class="eyebrow"><span></span> Student experiences</p>
-          <h2>Trust begins<br><em>with honesty.</em></h2>
+          <p class="eyebrow" data-i18n-text="stories.eyebrow"><span></span> Student experiences</p>
+          <h2 data-i18n-text="stories.title">Trust begins<br><em data-i18n="stories.titleEm">with honesty.</em></h2>
         </div>
         <div class="story-slider reveal" data-story-slider>
           <article class="story active verified-review-notice">
             <div class="trust-seal" aria-hidden="true">✓</div>
-            <p class="review-policy">Verified student experiences</p>
-            <blockquote>Student and parent feedback is published only after it is verified and shared with permission.</blockquote>
-            <p><strong>Real stories are being collected.</strong><span>Current families can share their experience directly with the academy.</span></p>
-            <a class="arrow-link" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Share your experience <span aria-hidden="true">↗</span></a>
+            <p class="review-policy" data-i18n="stories.verified">Verified student experiences</p>
+            <blockquote data-i18n="stories.policy">Student and parent feedback is published only after it is verified and shared with permission.</blockquote>
+            <p><strong data-i18n="stories.collecting">Real stories are being collected.</strong><span data-i18n="stories.families">Current families can share their experience directly with the academy.</span></p>
+            <a class="arrow-link" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n-text="stories.share">Share your experience <span aria-hidden="true">↗</span></a>
           </article>
         </div>
       </div>
@@ -308,17 +311,17 @@
     <section class="section faq" id="faq">
       <div class="container faq-grid">
         <div class="faq-heading reveal">
-          <p class="eyebrow"><span></span> Before you begin</p>
-          <h2>A few helpful<br><em>answers.</em></h2>
-          <p>Still wondering about something?</p>
-          <a class="arrow-link" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Ask us on Messenger <span>↗</span></a>
+          <p class="eyebrow" data-i18n-text="faq.eyebrow"><span></span> Before you begin</p>
+          <h2 data-i18n-text="faq.title">A few helpful<br><em data-i18n="faq.titleEm">answers.</em></h2>
+          <p data-i18n="faq.more">Still wondering about something?</p>
+          <a class="arrow-link" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n-text="faq.ask">Ask us on Messenger <span>↗</span></a>
         </div>
         <div class="faq-list reveal">
-          <article class="faq-item open"><button type="button" aria-expanded="true"><span>Can I try a lesson before joining?</span><i>−</i></button><div><p>Yes. Your first trial class is complimentary. You can meet a teacher, experience the teaching style and discuss the right learning path before committing.</p></div></article>
-          <article class="faq-item"><button type="button" aria-expanded="false"><span>I am a complete beginner. Is that okay?</span><i>+</i></button><div><p>Absolutely. Many Faseeh learners begin with little or no Arabic. Lessons start at your current level and build step by step.</p></div></article>
-          <article class="faq-item"><button type="button" aria-expanded="false"><span>Are classes suitable for children?</span><i>+</i></button><div><p>Yes. We offer focused 30-minute one-to-one sessions for children, with teachers who use a warm, age-appropriate approach.</p></div></article>
-          <article class="faq-item"><button type="button" aria-expanded="false"><span>Which recitation do you teach?</span><i>+</i></button><div><p>We currently teach Riwayat Hafs ‘an Asim, the most widely recited narration of the Quran worldwide.</p></div></article>
-          <article class="faq-item"><button type="button" aria-expanded="false"><span>How does scheduling work?</span><i>+</i></button><div><p>We arrange a consistent weekly schedule around teacher availability and your time zone. Message us and we will help find a suitable rhythm.</p></div></article>
+          <article class="faq-item open"><button type="button" aria-expanded="true"><span data-i18n="faq.q1">Can I try a lesson before joining?</span><i>−</i></button><div><p data-i18n="faq.a1">Yes. Your first trial class is complimentary. You can meet a teacher, experience the teaching style and discuss the right learning path before committing.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span data-i18n="faq.q2">I am a complete beginner. Is that okay?</span><i>+</i></button><div><p data-i18n="faq.a2">Absolutely. Many Faseeh learners begin with little or no Arabic. Lessons start at your current level and build step by step.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span data-i18n="faq.q3">Are classes suitable for children?</span><i>+</i></button><div><p data-i18n="faq.a3">Yes. We offer focused 30-minute one-to-one sessions for children, with teachers who use a warm, age-appropriate approach.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span data-i18n="faq.q4">Which recitation do you teach?</span><i>+</i></button><div><p data-i18n="faq.a4">We currently teach Riwayat Hafs ‘an Asim, the most widely recited narration of the Quran worldwide.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span data-i18n="faq.q5">How does scheduling work?</span><i>+</i></button><div><p data-i18n="faq.a5">We arrange a consistent weekly schedule around teacher availability and your time zone. Message us and we will help find a suitable rhythm.</p></div></article>
         </div>
       </div>
     </section>
@@ -326,10 +329,10 @@
     <section class="closing-cta" id="contact">
       <div class="closing-pattern" aria-hidden="true"></div>
       <div class="container closing-inner reveal">
-        <p class="eyebrow eyebrow-light"><span></span> Your first lesson is on us</p>
-        <h2>One gentle beginning<br>can change your <em>relationship</em><br>with the Quran.</h2>
-        <a class="btn btn-gold" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">BOOK YOUR FREE ASSESSMENT <span aria-hidden="true">↗</span></a>
-        <p>FREE Assessment &amp; Trial Session. No commitment.</p>
+        <p class="eyebrow eyebrow-light" data-i18n-text="closing.eyebrow"><span></span> Your first lesson is on us</p>
+        <h2 data-i18n-text="closing.title1|closing.title2|closing.title3">One gentle beginning<br>can change your <em data-i18n="closing.titleEm">relationship</em><br>with the Quran.</h2>
+        <a class="btn btn-gold" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n-text="cta.assessment">BOOK YOUR FREE ASSESSMENT <span aria-hidden="true">↗</span></a>
+        <p data-i18n="closing.noCommitment">FREE Assessment &amp; Trial Session. No commitment.</p>
       </div>
     </section>
   </main>
@@ -337,16 +340,18 @@
   <footer class="footer">
     <div class="container footer-main">
       <div class="footer-brand">
-        <a class="brand brand-light" href="#home"><img src="images/logo.jpg" alt="Faseeh Academy — Quran for all Muslims" class="official-logo" width="92" height="68"></a>
-        <p><span class="footer-tagline">Online Quran education for non-Arabic speaking Muslims—taught with clarity, care and patience.</span><span class="mobile-location">Cairo, Egypt · Online worldwide</span></p>
+        <a class="brand brand-light" href="#home"><img src="images/logo.jpg" alt="Faseeh Academy — Quran for all Muslims" class="official-logo" width="92" height="68" data-i18n-alt="site.logo"></a>
+        <p><span class="footer-tagline" data-i18n="footer.taglineHome">Online Quran education for non-Arabic speaking Muslims—taught with clarity, care and patience.</span><span class="mobile-location" data-i18n="footer.locationShort">Cairo, Egypt · Online worldwide</span></p>
       </div>
-      <div><h3>Explore</h3><ul><li><a href="#programs">Programs</a></li><li><a href="#approach">Our approach</a></li><li><a href="#plans">Plans</a></li><li><a href="teachers.html">Teachers</a></li><li><a href="about.html">About</a></li></ul></div>
-      <div><h3>Connect</h3><ul><li><a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Messenger</a></li><li><a href="mailto:faseehacademy3@gmail.com">Email: faseehacademy3@gmail.com</a></li><li><a href="https://facebook.com/faseehacademy" target="_blank" rel="noopener noreferrer">Facebook</a></li><li><a href="leave-review.html">Leave a review</a></li></ul></div>
-      <div><h3>Based in</h3><p>Cairo, Egypt<br><span>Expanding to Abu Dhabi, UAE</span></p></div>
+      <div><h3 data-i18n="footer.explore">Explore</h3><ul><li><a href="#programs" data-i18n="nav.programs">Programs</a></li><li><a href="#approach" data-i18n="nav.approach">Our approach</a></li><li><a href="#plans" data-i18n="nav.plans">Plans</a></li><li><a href="teachers.html" data-i18n="nav.teachers">Teachers</a></li><li><a href="about.html" data-i18n="nav.about">About</a></li></ul></div>
+      <div><h3 data-i18n="footer.connect">Connect</h3><ul><li><a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n="nav.messenger">Messenger</a></li><li><a href="mailto:faseehacademy3@gmail.com" data-i18n-text="footer.emailLabel">Email: <bdi dir="ltr">faseehacademy3@<wbr>gmail.com</bdi></a></li><li><a href="https://facebook.com/faseehacademy" target="_blank" rel="noopener noreferrer" data-i18n="nav.facebook">Facebook</a></li><li><a href="leave-review.html" data-i18n="footer.review">Leave a review</a></li></ul></div>
+      <div><h3 data-i18n="footer.based">Based in</h3><p data-i18n-text="footer.cairo">Cairo, Egypt<br><span data-i18n="footer.expanding">Expanding to Abu Dhabi, UAE</span></p></div>
     </div>
-    <div class="container footer-bottom"><p>© <span data-year></span> Faseeh Academy</p><p>Learning the words that light the heart.</p></div>
+    <div class="container footer-bottom"><p data-i18n-text="_|site.name">© <span data-year></span> Faseeh Academy</p><p data-i18n="footer.motto">Learning the words that light the heart.</p></div>
   </footer>
 
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

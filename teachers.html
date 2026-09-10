@@ -3,27 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Meet the patient, experienced Quran and Arabic teachers at Faseeh Academy.">
+  <meta name="description" content="Meet the patient, experienced Quran and Arabic teachers at Faseeh Academy." data-i18n-content="teachers.pageDescription">
   <meta name="theme-color" content="#082f25">
-  <title>Our Teachers | Faseeh Academy</title>
+  <title data-i18n="teachers.pageTitle">Our Teachers | Faseeh Academy</title>
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/refinements.css">
+  <link rel="stylesheet" href="css/teachers.css">
+  <link rel="stylesheet" href="css/i18n.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="announcement"><div class="container announcement-inner"><p><span class="status-dot" aria-hidden="true"></span> New student places are open</p><a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">BOOK YOUR FREE ASSESSMENT <span aria-hidden="true">↗</span></a></div></div>
+  <a class="skip-link" href="#main" data-i18n="site.skip">Skip to content</a>
+  <div class="announcement"><div class="container announcement-inner"><p data-i18n-text="site.openings"><span class="status-dot" aria-hidden="true"></span> New student places are open</p><a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n-text="cta.assessment">BOOK YOUR FREE ASSESSMENT <span aria-hidden="true">↗</span></a></div></div>
 
   <header class="site-header">
-    <nav class="navbar container" aria-label="Primary navigation">
-      <a class="brand" href="index.html" aria-label="Faseeh Academy home"><img src="images/logo.jpg" alt="Faseeh Academy — Quran for all Muslims" class="official-logo" width="92" height="68"></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="navbar container" aria-label="Primary navigation" data-i18n-aria-label="nav.primary">
+      <a class="brand" href="index.html" aria-label="Faseeh Academy home" data-i18n-aria-label="site.home"><img src="images/logo.jpg" alt="Faseeh Academy — Quran for all Muslims" class="official-logo" width="92" height="68" data-i18n-alt="site.logo"></a>
+      <a class="language-switch" data-language-switch href="?lang=ar" lang="ar" hreflang="ar" aria-label="View this website in Arabic" data-i18n-aria-label="nav.languageArabic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-5 5-5 13 0 18M12 3c5 5 5 13 0 18"/></svg><span>العربية</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation" data-i18n-aria-label="nav.open"><span></span><span></span></button>
       <div class="nav-menu" id="navMenu">
-        <ul class="nav-links"><li><a href="index.html#programs">Programs</a></li><li><a href="index.html#approach">Our approach</a></li><li><a href="index.html#plans">Plans</a></li><li><a href="teachers.html" aria-current="page">Teachers</a></li><li><a href="about.html">About</a></li></ul>
-        <a class="text-link nav-contact" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Messenger</a>
-        <a class="btn btn-small btn-primary" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">BOOK YOUR FREE ASSESSMENT</a>
+        <ul class="nav-links"><li><a href="index.html#programs" data-i18n="nav.programs">Programs</a></li><li><a href="index.html#approach" data-i18n="nav.approach">Our approach</a></li><li><a href="index.html#plans" data-i18n="nav.plans">Plans</a></li><li><a href="teachers.html" aria-current="page" data-i18n="nav.teachers">Teachers</a></li><li><a href="about.html" data-i18n="nav.about">About</a></li></ul>
+        <a class="text-link nav-contact" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n="nav.messenger">Messenger</a>
+        <a class="btn btn-small btn-primary" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n="cta.assessment">BOOK YOUR FREE ASSESSMENT</a>
       </div>
     </nav>
   </header>
@@ -32,58 +36,62 @@
     <section class="page-hero">
       <div class="container page-hero-grid">
         <div class="reveal">
-          <p class="eyebrow eyebrow-light"><span></span> Meet our teachers</p>
-          <h1>Knowledge shared<br><em>with patience.</em></h1>
+          <p class="eyebrow eyebrow-light" data-i18n-text="teachers.meet"><span></span> Meet our teachers</p>
+          <h1 data-i18n-text="teachers.heroTitle">Knowledge shared<br><em data-i18n="teachers.heroEm">with patience.</em></h1>
         </div>
         <div class="page-hero-copy reveal">
-          <p>Native Arabic teachers who communicate clearly in English and adapt every lesson to the learner in front of them.</p>
+          <p data-i18n="teachers.heroIntro">Native Arabic teachers who communicate clearly in English and adapt every lesson to the learner in front of them.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="section teachers-preview teachers-page-section" id="teacher-profiles">
+      <div class="container">
+        <div class="section-intro reveal">
+          <div><p class="eyebrow" data-i18n-text="teachers.profiles"><span></span> Teacher profiles</p><h2 data-i18n-text="teachers.findTitle">Find the right<br><em data-i18n="teachers.findEm">learning guide.</em></h2></div>
+          <div class="section-intro-side"><p data-i18n="teachers.profileIntro">Explore teaching styles, qualifications and specialties.</p><div class="carousel-controls" data-teacher-controls><button type="button" data-teacher-prev aria-label="Previous teacher" data-i18n-aria-label="teachers.previous">←</button><button type="button" data-teacher-next aria-label="Next teacher" data-i18n-aria-label="teachers.next">→</button></div></div>
+        </div>
+        <div class="teacher-viewport reveal" data-teacher-slider aria-label="Teacher profiles carousel" data-i18n-aria-label="teachers.carousel"></div>
+        <p class="teacher-template-note" data-i18n="teachers.template">Sample profiles — names and qualifications will be confirmed with our teaching team.</p>
+        <div class="teachers-footer reveal"><p data-i18n="teachers.matchIntro">We match each learner by level, goals, schedule, age and teacher preference.</p><a class="arrow-link" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n-text="teachers.match">Ask for a teacher match <span>↗</span></a></div>
       </div>
     </section>
 
     <section class="section teacher-page-benefits">
       <div class="container">
         <div class="section-intro compact-intro reveal">
-          <div><p class="eyebrow"><span></span> Trusted guidance</p><h2>Why Learn With<br><em>Our Teachers?</em></h2></div>
-          <p>Experienced, encouraging teachers for learners at every starting point.</p>
+          <div><p class="eyebrow" data-i18n-text="teachers.trust"><span></span> Trusted guidance</p><h2 data-i18n-text="teachers.whyTitle">Why Learn With<br><em data-i18n="teachers.whyEm">Our Teachers?</em></h2></div>
+          <p data-i18n="teachers.whyIntro">Experienced, encouraging teachers for learners at every starting point.</p>
         </div>
         <div class="benefits-grid reveal">
-          <p><span>01</span>Native Arabic Teachers</p>
-          <p><span>02</span>4+ Years of Teaching Experience</p>
-          <p><span>03</span>Fluent English Communication</p>
-          <p><span>04</span>Personalized One-to-One Lessons</p>
-          <p><span>05</span>Patient &amp; Supportive Teaching</p>
-          <p><span>06</span>Level-Based Learning</p>
+          <p data-i18n-text="teachers.native"><span>01</span>Native Arabic Teachers</p>
+          <p data-i18n-text="teachers.experience"><span>02</span>Experience at Every Level</p>
+          <p data-i18n-text="teachers.english"><span>03</span>Fluent English Communication</p>
+          <p data-i18n-text="teachers.personal"><span>04</span>Personalized One-to-One Lessons</p>
+          <p data-i18n-text="teachers.patient"><span>05</span>Patient &amp; Supportive Teaching</p>
+          <p data-i18n-text="teachers.level"><span>06</span>Level-Based Learning</p>
         </div>
-      </div>
-    </section>
-
-    <section class="section teachers-preview teachers-page-section">
-      <div class="container">
-        <div class="section-intro reveal">
-          <div><p class="eyebrow"><span></span> Teacher profiles</p><h2>Find the right<br><em>learning guide.</em></h2></div>
-          <div class="section-intro-side"><p>Explore our initial teaching team profiles and specialties.</p><div class="carousel-controls" data-teacher-controls><button type="button" data-teacher-prev aria-label="Previous teacher">←</button><button type="button" data-teacher-next aria-label="Next teacher">→</button></div></div>
-        </div>
-        <div class="teacher-viewport reveal" data-teacher-slider aria-label="Teacher profiles carousel"></div>
-        <div class="teachers-footer reveal"><p>We match each learner by level, goals, schedule, age and teacher preference.</p><a class="arrow-link" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Ask for a teacher match <span>↗</span></a></div>
       </div>
     </section>
 
     <section class="closing-cta">
       <div class="closing-pattern" aria-hidden="true"></div>
-      <div class="container closing-inner reveal"><p class="eyebrow eyebrow-light"><span></span> Meet your teacher</p><h2>Begin with a free<br><em>assessment and trial.</em></h2><a class="btn btn-gold" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">BOOK YOUR FREE ASSESSMENT <span aria-hidden="true">↗</span></a><p>FREE Assessment &amp; Trial Session. No commitment.</p></div>
+      <div class="container closing-inner reveal"><p class="eyebrow eyebrow-light" data-i18n-text="approach.step2"><span></span> Meet your teacher</p><h2 data-i18n-text="teachers.ctaTitle">Begin with a free<br><em data-i18n="teachers.ctaEm">assessment and trial.</em></h2><a class="btn btn-gold" href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n-text="cta.assessment">BOOK YOUR FREE ASSESSMENT <span aria-hidden="true">↗</span></a><p data-i18n="closing.noCommitment">FREE Assessment &amp; Trial Session. No commitment.</p></div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-main">
-      <div class="footer-brand"><a class="brand brand-light" href="index.html"><img src="images/logo.jpg" alt="Faseeh Academy — Quran for all Muslims" class="official-logo" width="92" height="68"></a><p><span class="footer-tagline">Online Quran education for non-Arabic-speaking Muslims—taught with clarity, care and patience.</span><span class="mobile-location">Cairo, Egypt · Online worldwide</span></p></div>
-      <div><h3>Explore</h3><ul><li><a href="index.html#programs">Programs</a></li><li><a href="index.html#approach">Our approach</a></li><li><a href="index.html#plans">Plans</a></li><li><a href="about.html">About</a></li></ul></div>
-      <div><h3>Connect</h3><ul><li><a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer">Messenger</a></li><li><a href="mailto:faseehacademy3@gmail.com">Email: faseehacademy3@gmail.com</a></li><li><a href="https://facebook.com/faseehacademy" target="_blank" rel="noopener noreferrer">Facebook</a></li></ul></div>
-      <div><h3>Based in</h3><p>Cairo, Egypt<br><span>Teaching learners worldwide</span></p></div>
+      <div class="footer-brand"><a class="brand brand-light" href="index.html"><img src="images/logo.jpg" alt="Faseeh Academy — Quran for all Muslims" class="official-logo" width="92" height="68" data-i18n-alt="site.logo"></a><p><span class="footer-tagline" data-i18n="footer.tagline">Online Quran education for non-Arabic-speaking Muslims—taught with clarity, care and patience.</span><span class="mobile-location" data-i18n="footer.locationShort">Cairo, Egypt · Online worldwide</span></p></div>
+      <div><h3 data-i18n="footer.explore">Explore</h3><ul><li><a href="index.html#programs" data-i18n="nav.programs">Programs</a></li><li><a href="index.html#approach" data-i18n="nav.approach">Our approach</a></li><li><a href="index.html#plans" data-i18n="nav.plans">Plans</a></li><li><a href="about.html" data-i18n="nav.about">About</a></li></ul></div>
+      <div><h3 data-i18n="footer.connect">Connect</h3><ul><li><a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" data-i18n="nav.messenger">Messenger</a></li><li><a href="mailto:faseehacademy3@gmail.com" data-i18n-text="footer.emailLabel">Email: <bdi dir="ltr">faseehacademy3@<wbr>gmail.com</bdi></a></li><li><a href="https://facebook.com/faseehacademy" target="_blank" rel="noopener noreferrer" data-i18n="nav.facebook">Facebook</a></li></ul></div>
+      <div><h3 data-i18n="footer.based">Based in</h3><p data-i18n-text="footer.cairo">Cairo, Egypt<br><span data-i18n="footer.worldwide">Teaching learners worldwide</span></p></div>
     </div>
-    <div class="container footer-bottom"><p>© <span data-year></span> Faseeh Academy</p><p>Learning the words that light the heart.</p></div>
+    <div class="container footer-bottom"><p data-i18n-text="_|site.name">© <span data-year></span> Faseeh Academy</p><p data-i18n="footer.motto">Learning the words that light the heart.</p></div>
   </footer>
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/data/teachers.js"></script>
   <script src="js/teachers.js"></script>
   <script src="js/script.js"></script>
 </body>

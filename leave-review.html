@@ -1,61 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Share your learning experience with Faseeh Academy." />
-  <title>Leave a Review | Faseeh Academy</title>
+  <meta name="description" content="Share your learning experience with Faseeh Academy." data-i18n-content="review.description" />
+  <title data-i18n="review.title">Leave a Review | Faseeh Academy</title>
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/refinements.css">
+  <link rel="stylesheet" href="css/i18n.css">
 </head>
 <body class="review-page">
+  <header class="review-header container">
+    <a class="brand" href="index.html" aria-label="Faseeh Academy home" data-i18n-aria-label="site.home"><img src="images/logo.jpg" alt="Faseeh Academy — Quran for all Muslims" class="official-logo" width="92" height="68" data-i18n-alt="site.logo"></a>
+    <a class="language-switch" data-language-switch href="?lang=ar" lang="ar" hreflang="ar" aria-label="View this website in Arabic" data-i18n-aria-label="nav.languageArabic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-5 5-5 13 0 18M12 3c5 5 5 13 0 18"/></svg><span>العربية</span></a>
+  </header>
   <main class="section">
     <div class="container">
       <div class="review-shell card">
-        <p class="section-tag">Student Testimonial</p>
-        <h1>Share Your Experience</h1>
-        <p class="review-intro">Your feedback helps other families and learners understand what to expect at Faseeh Academy.</p>
+        <p class="section-tag" data-i18n="review.tag">Student Testimonial</p>
+        <h1 data-i18n="review.heading">Share Your Experience</h1>
+        <p class="review-intro" data-i18n="review.intro">Your feedback helps other families and learners understand what to expect at Faseeh Academy.</p>
 
         <form id="reviewForm" class="review-form" novalidate>
-          <label for="reviewName">Your Name</label>
-          <input id="reviewName" name="name" type="text" required placeholder="e.g., Amina" />
+          <label for="reviewName" data-i18n="review.name">Your Name</label>
+          <input id="reviewName" name="name" type="text" required placeholder="e.g., Amina" data-i18n-placeholder="review.namePlaceholder" />
 
-          <label for="reviewCountry">Country</label>
-          <input id="reviewCountry" name="country" type="text" required placeholder="e.g., Canada" />
+          <label for="reviewCountry" data-i18n="review.country">Country</label>
+          <input id="reviewCountry" name="country" type="text" required placeholder="e.g., Canada" data-i18n-placeholder="review.countryPlaceholder" />
 
-          <label for="reviewRole">You are</label>
+          <label for="reviewRole" data-i18n="review.role">You are</label>
           <select id="reviewRole" name="role" required>
-            <option value="" selected disabled>Select one</option>
-            <option value="student">Student</option>
-            <option value="parent">Parent</option>
-            <option value="guardian">Guardian</option>
+            <option value="" selected disabled data-i18n="review.select">Select one</option>
+            <option value="student" data-i18n="review.student">Student</option>
+            <option value="parent" data-i18n="review.parent">Parent</option>
+            <option value="guardian" data-i18n="review.guardian">Guardian</option>
           </select>
 
-          <label for="reviewText">Your Review</label>
-          <textarea id="reviewText" name="message" rows="5" required placeholder="Share your experience in a few lines..."></textarea>
+          <label for="reviewText" data-i18n="review.text">Your Review</label>
+          <textarea id="reviewText" name="message" rows="5" required placeholder="Share your experience in a few lines..." data-i18n-placeholder="review.textPlaceholder"></textarea>
 
           <div class="review-actions">
-            <button type="submit" class="btn btn-primary">Submit Review</button>
-            <a href="index.html" class="btn btn-secondary">Back to Home</a>
+            <button type="submit" class="btn btn-primary" data-i18n="review.submit">Send your review by email</button>
+            <a href="index.html" class="btn btn-secondary" data-i18n="review.back">Back to Home</a>
           </div>
         </form>
 
+        <p class="review-handoff-note" data-i18n="review.note">Your email app will open with your review ready to send. We ask your permission before publishing.</p>
         <section id="reviewSuccess" class="review-success" aria-live="polite" hidden>
-          <h2>Thank you for your review.</h2>
-          <p>Your testimonial has been submitted for review by our admin team before publishing.</p>
-          <p>Would you like to return to the home page?</p>
+          <h2 data-i18n="review.ready">Your review is ready to send.</h2>
+          <p data-i18n="review.sendNote">Please send it from your email app to complete your submission.</p>
+          <p data-i18n="review.fallback">If your email app did not open, contact us on Messenger.</p>
           <div class="review-actions">
-            <a href="index.html" class="btn btn-primary">Yes, Return Home</a>
-            <button id="submitAnother" type="button" class="btn btn-secondary">No, Submit Another Review</button>
+            <a href="https://m.me/61577487350894" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="review.messenger">Contact us on Messenger</a>
+            <button id="submitAnother" type="button" class="btn btn-secondary" data-i18n="review.edit">Edit your review</button>
           </div>
         </section>
       </div>
     </div>
   </main>
 
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/review-form.js"></script>
 </body>
 </html>

@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap");
+
+.language-switch { display: inline-flex; align-items: center; justify-content: center; gap: .45rem; flex: 0 0 auto; min-height: 44px; padding: .5rem .8rem; border: 1px solid rgba(11,59,46,.18); border-radius: 30px; color: var(--forest); background: rgba(255,255,255,.5); font-family: var(--sans); font-size: .75rem; font-weight: 600; white-space: nowrap; transition: border-color .2s, background .2s; }
+.language-switch[lang="ar"] { font-family: "Noto Sans Arabic", Tahoma, sans-serif; }
+.language-switch:hover { background: var(--cream); border-color: var(--gold); }
+.language-switch:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+.language-switch svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.3; }
+.review-header { display: flex; justify-content: space-between; align-items: center; padding-block: .7rem; }
+.review-handoff-note, .teacher-template-note { margin-top: 1rem; color: var(--muted); font-size: .72rem; line-height: 1.7; }
+.review-page .section { padding-top: 2rem; }
+
+html[lang="ar"] { --sans: "Noto Sans Arabic", Tahoma, sans-serif; --display: "Noto Naskh Arabic", "Noto Sans Arabic", serif; }
+html[lang="ar"] body { line-height: 1.85; }
+html[lang="ar"] .eyebrow,
+html[lang="ar"] .btn,
+html[lang="ar"] .announcement,
+html[lang="ar"] .price-badge,
+html[lang="ar"] .price-name,
+html[lang="ar"] .hero-offer,
+html[lang="ar"] .hero-note-label,
+html[lang="ar"] .footer h3,
+html[lang="ar"] .review-policy,
+html[lang="ar"] .review-form label { letter-spacing: 0; }
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3 { letter-spacing: 0; line-height: 1.3; }
+html[lang="ar"] h1 em,
+html[lang="ar"] h2 em,
+html[lang="ar"] .price span,
+html[lang="ar"] .tier-best { font-style: normal; }
+html[lang="ar"] .hero h1 { font-size: clamp(3rem, 5.8vw, 5.8rem); }
+html[lang="ar"] .page-hero h1 { font-size: clamp(3.3rem, 7vw, 6.5rem); }
+html[lang="ar"] .section h2 { font-size: clamp(2.65rem, 4.5vw, 4.4rem); }
+html[lang="ar"] .closing-cta h2 { font-size: clamp(3rem, 5.7vw, 5.5rem); }
+html[lang="ar"] .hero-copy { text-align: start; }
+html[dir="rtl"] .hero-offer { border-left: 0; border-right: 2px solid var(--gold); }
+html[dir="rtl"] .hero-shade { background: linear-gradient(270deg, rgba(3,27,21,.95), rgba(3,27,21,.78) 40%, rgba(3,27,21,.24)), linear-gradient(0deg, rgba(3,27,21,.5), transparent 35%); }
+html[dir="rtl"] .faq-item button { text-align: right; }
+html[dir="rtl"] .faq-item.open > div > p { padding: 0 0 1.6rem 3.2rem; }
+html[dir="rtl"] .story-slider { border-left: 0; border-right: 1px solid var(--line); }
+html[dir="rtl"] .price strong,
+html[dir="rtl"] .hero-note-stats strong { direction: ltr; unicode-bidi: isolate; }
+html[dir="rtl"] .footer a[href^="mailto:"] { unicode-bidi: plaintext; }
+html[dir="rtl"] .footer-bottom p:last-child { text-align: start; }
+
+@media (max-width: 780px) {
+  .language-switch { margin-inline-start: auto; padding: .45rem .7rem; }
+  html[lang="ar"] .nav-links a { font-size: 1.35rem; }
+  html[dir="rtl"] .hero-shade { background: linear-gradient(180deg, var(--forest-deep), rgba(6,42,33,0) 30%, rgba(6,42,33,0) 80%, rgba(6,42,33,.25)); }
+}
+@media (max-width: 540px) {
+  html[lang="ar"] .hero h1 { font-size: clamp(2.7rem, 10vw, 3.6rem); }
+  html[lang="ar"] .page-hero h1 { font-size: clamp(2.9rem, 11vw, 4rem); }
+  html[lang="ar"] .section h2 { font-size: clamp(2.6rem, 10vw, 3.4rem); }
+  html[lang="ar"] .closing-cta h2 { font-size: 2.9rem; }
+  html[dir="rtl"] .faq-item.open > div > p { padding-left: 0; }
+  .language-switch { gap: .35rem; }
+}
